@@ -8,13 +8,13 @@ public class Test {
 
     public static int solution(Integer[] A, int k, int l) {
         int totalKAndL = 0;
-        int startIndex=0;
-        if (k==l){
+        int startIndex = 0;
+        if (k == l) {
             return -1;
         }
-        Integer[] a=new Integer[A.length];
+        Integer[] a = new Integer[A.length];
         System.arraycopy(A, 0, a, 0, A.length);
-        Integer[] maxAndStartIndex = getMaxContinuous(a, k,startIndex);
+        Integer[] maxAndStartIndex = getMaxContinuous(a, k, startIndex);
 
         totalKAndL += maxAndStartIndex[0];
 
@@ -61,7 +61,7 @@ public class Test {
     }
 
     public static void main(String[] args) {
-        Integer a[] = {0,1};
+        Integer a[] = {0, 1};
 
         System.out.println(solution(a, 2, 3));
 

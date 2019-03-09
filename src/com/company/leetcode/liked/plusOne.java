@@ -1,9 +1,6 @@
 package com.company.leetcode.liked;
 
 
-import java.util.Iterator;
-import java.util.Stack;
-
 class plusOne {
     public static void main(String[] args) {
         ListNode listNode1 = new ListNode(2);
@@ -17,15 +14,15 @@ class plusOne {
         ListNode listNode = addTwoNumbers(listNode1, listNode2);
         while (listNode != null) {
             System.out.println(listNode.val);
-            listNode=listNode.next;
+            listNode = listNode.next;
         }
 
     }
 
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         int carry = 0;
-        ListNode  listNode = new ListNode(0);
-        ListNode pointer=listNode;
+        ListNode listNode = new ListNode(0);
+        ListNode pointer = listNode;
         while (l1 != null || l2 != null) {
             int val = l1 != null ? l1.val : 0;
             int val1 = l2 != null ? l2.val : 0;
@@ -38,19 +35,19 @@ class plusOne {
                 carry = 0;
             }
 
-            pointer.next=new ListNode(temp);
-            pointer=pointer.next;
+            pointer.next = new ListNode(temp);
+            pointer = pointer.next;
 
-            if (l1!=null) {
+            if (l1 != null) {
                 l1 = l1.next;
             }
-            if (l2!=null) {
+            if (l2 != null) {
                 l2 = l2.next;
             }
         }
 
-        if (carry>0){
-            pointer.next=new ListNode(carry);
+        if (carry > 0) {
+            pointer.next = new ListNode(carry);
 
         }
         return listNode.next;

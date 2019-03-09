@@ -1,19 +1,10 @@
-package com.company.tree;
+package com.company.tree.iterativeTraversal;
+
+import com.company.tree.BinaryTree;
+import com.company.tree.TreeNode;
 
 import java.util.ArrayList;
 import java.util.Stack;
-
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode(int x) {
-        val = x;
-        left = null;
-        right = null;
-    }
-}
 
 
 public class InorderTraversalWORecursion extends BinaryTree {
@@ -28,38 +19,16 @@ public class InorderTraversalWORecursion extends BinaryTree {
         tree.root.right.left = new Node(6);
         tree.root.right.right = new Node(7);
 
-//
-//        tree.root = new Node(1);
-//        tree.root.right = new Node(2);
-//        tree.root.right.left = new Node(3);
 
 
-//        ArrayList<Integer> arrayList = tree.postOrderIterative(tree.root);
+
+        tree.preorderTraversal(tree.root);
+//        ArrayList<Integer> arrayList = tree.preorderTraversal(tree.root);
 //        for (int i : arrayList) {
 //            System.out.print(i);
 //            System.out.print(" ");
 //        }
 
-    }
-
-    private void inOrderTraverse() {
-        if (root == null) {
-            return;
-        }
-
-        Stack<Node> stack = new Stack<>();
-        Node curr = root;
-
-        while (curr != null || stack.size() > 0) {
-            while (curr != null) {
-                stack.push(curr);
-                curr = curr.left;
-            }
-            curr = stack.pop();
-
-            System.out.println(curr.data);
-            curr = curr.right;
-        }
     }
 
     public ArrayList inorderTraversal(Node A) {

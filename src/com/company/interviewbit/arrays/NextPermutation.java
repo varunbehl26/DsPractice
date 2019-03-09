@@ -1,7 +1,6 @@
 package com.company.interviewbit.arrays;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 
 public class NextPermutation {
@@ -16,7 +15,6 @@ public class NextPermutation {
         list.add(4);
 
 
-
         nextPermutation(list);
 
 
@@ -25,11 +23,11 @@ public class NextPermutation {
     public static void nextPermutation(ArrayList<Integer> a) {
         if (!a.isEmpty()) {
 
-            int index=0;
+            int index = 0;
             boolean isPossible = false;
             for (int i = a.size() - 1; i > 0; i--) {
                 if (a.get(i) > a.get(i - 1)) {
-                    index=i-1;
+                    index = i - 1;
                     isPossible = true;
                     break;
                 }
@@ -37,12 +35,12 @@ public class NextPermutation {
 
 
             if (isPossible) {
-                int temp=a.get(index);
-                a.set(index,a.get(a.size()-1));
-                a.set(a.size()-1,temp);
-                Collections.sort(a.subList(index+1,a.size()));
+                int temp = a.get(index);
+                a.set(index, a.get(a.size() - 1));
+                a.set(a.size() - 1, temp);
+                Collections.sort(a.subList(index + 1, a.size()));
 
-            }else {
+            } else {
                 Collections.sort(a);
             }
 

@@ -16,8 +16,8 @@ public class BinaryGap {
         String binary = Integer.toBinaryString(N);
         char[] chars = binary.toCharArray();
 
-        List<Integer> indexes=new ArrayList();
-        List<Integer> differencesIndex=new ArrayList();
+        List<Integer> indexes = new ArrayList();
+        List<Integer> differencesIndex = new ArrayList();
 
         for (int i = 0; i < binary.length(); i++) {
             if (chars[i] == '1') {
@@ -25,15 +25,15 @@ public class BinaryGap {
             }
         }
 
-        for (int i = 0; i < indexes.size()-1; i++) {
-            differencesIndex.add(indexes.get(i+1)-indexes.get(i));
+        for (int i = 0; i < indexes.size() - 1; i++) {
+            differencesIndex.add(indexes.get(i + 1) - indexes.get(i));
         }
         Collections.sort(differencesIndex);
         System.out.println(binary);
 
-        if (differencesIndex.size()>0) {
+        if (differencesIndex.size() > 0) {
             return differencesIndex.get(differencesIndex.size() - 1) - 1;
-        }else{
+        } else {
             return 0;
         }
     }

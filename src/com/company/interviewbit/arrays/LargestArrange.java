@@ -17,15 +17,15 @@ public class LargestArrange {
         list.sort(new Comparator<String>() {
             @Override
             public int compare(String x, String y) {
-                System.out.println("Comparing "+x+" and "+y+"");
-                String xy=x+y;
-                String yx=y+x;
+                System.out.println("Comparing " + x + " and " + y + "");
+                String xy = x + y;
+                String yx = y + x;
 
-                return xy.compareTo(yx)>0?-1:1;
+                return xy.compareTo(yx) > 0 ? -1 : 1;
             }
         });
 
-        StringBuilder stringBuilder=new StringBuilder();
+        StringBuilder stringBuilder = new StringBuilder();
 
         for (String s : list) {
             stringBuilder.append(s);

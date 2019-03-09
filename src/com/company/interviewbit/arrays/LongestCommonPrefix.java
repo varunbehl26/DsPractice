@@ -6,13 +6,13 @@ import java.util.ArrayList;
 public class LongestCommonPrefix {
     public static void main(String[] args) {
 
-        ArrayList arrayList=new ArrayList();
+        ArrayList arrayList = new ArrayList();
         arrayList.add("abcdefgh");
         arrayList.add("abefghijk");
         arrayList.add("abcefgh");
 
 
-        String[] str={"abcdefgh","abefghijk", "abcefgh"};
+        String[] str = {"abcdefgh", "abefghijk", "abcefgh"};
 
 
         System.out.println(longestCommonPrefix(str));
@@ -52,8 +52,8 @@ public class LongestCommonPrefix {
         return strs[0].substring(0, (low + high) / 2);
     }
 
-    private static boolean isCommonPrefix(String[] strs, int len){
-        String str1 = strs[0].substring(0,len);
+    private static boolean isCommonPrefix(String[] strs, int len) {
+        String str1 = strs[0].substring(0, len);
         for (int i = 1; i < strs.length; i++)
             if (!strs[i].startsWith(str1))
                 return false;

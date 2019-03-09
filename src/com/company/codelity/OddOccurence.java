@@ -30,7 +30,7 @@ public class OddOccurence {
                 hashMap.put(i1, 1);
             }
         }
-        for (Map.Entry<Integer,Integer> entry : hashMap.entrySet())
+        for (Map.Entry<Integer, Integer> entry : hashMap.entrySet())
             System.out.println(entry.getKey());
         return -1;
 

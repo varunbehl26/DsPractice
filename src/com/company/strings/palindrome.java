@@ -27,7 +27,7 @@ public class palindrome {
                 asciiEnd = (int) lowerCase.charAt(index);
             }
 
-            if (i==index){
+            if (i == index) {
                 return 1;
             }
 

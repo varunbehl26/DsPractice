@@ -1,69 +1,106 @@
-//package com.company.company;
+package com.company;
+
+import java.util.HashSet;
+import java.util.Set;
+import java.util.Stack;
+
+public class GFG {
+
+    public static void main(String[] args) {
+//        System.out.println(numJewelsInStones("z", "ZZ"));
+//        System.out.println(isPalindrome(121));
+        System.out.println(lengthOfLongestSubstring("pwwkew"));
+    }
+
+    public static int numJewelsInStones(String J, String S) {
+
+        int num = 0;
+        for (int i = 0; i < J.length(); i++) {
+            for (int j = 0; j < S.length(); j++) {
+                if (J.charAt(i) == S.charAt(j)) {
+                    num++;
+                }
+            }
+        }
+
+        return num;
+
+    }
+
+//    public static boolean isValid(String s) {
+//        Stack<Character> stack = new Stack();
 //
-//import java.util.ArrayList;
-//import java.util.Arrays;
-//import java.util.List;
-//
-//public class Test {
-//
-//    public static int solution(int[] A, int k, int l) {
-//        int totalKAndL = 0;
-//        int startIndex=0;
-//
-//        Integer[] a=new Integer[A.length];
-//        for (int i = 0; i < A.length; i++) {
-//            a[i]= A[i];
+//        for(int i = 0; i<s.length(); i++) {
+//            // Push any open parentheses onto stack
+//            if(s.charAt(i) == '(' || s.charAt(i) == '[' || s.charAt(i) == '{')
+//                stack.push(s.charAt(i));
+//                // Check stack for corresponding closing parentheses, false if not valid
+//            else if(s.charAt(i) == ')' && !stack.empty() && stack.peek() == '(')
+//                stack.pop();
+//            else if(s.charAt(i) == ']' && !stack.empty() && stack.peek() == '[')
+//                stack.pop();
+//            else if(s.charAt(i) == '}' && !stack.empty() && stack.peek() == '{')
+//                stack.pop();
+//            else
+//                return false;
 //        }
-//        Integer[] maxAndStartIndex = getMaxContinuous(a, k,startIndex);
 //
-//        totalKAndL += maxAndStartIndex[0];
-//
-//        A = getFormattedArray(A, maxAndStartIndex[1], k);
-//
-//        maxAndStartIndex = getMaxContinuous(A, l, startIndex);
-//
-//        totalKAndL += maxAndStartIndex[0];
-//
-//        return totalKAndL;
+//        return true;
 //    }
-//
-//    private static Integer[] getFormattedArray(Integer[] a, Integer startIndex, int k) {
-//        List<Integer> integers = new ArrayList<>();
-//
-//        integers.addAll(Arrays.asList(a).subList(0, startIndex));
-//        integers.addAll(Arrays.asList(a).subList(startIndex + k, a.length));
-//
-//        return (integers).toArray(new Integer[0]);
-//    }
-//
-//    private static Integer[] getMaxContinuous(Integer[] a, int nuElementsToCheck, int startIndex) {
-//        int sum = 0;
-//        int tempSum = 0;
-//        int index = 0;
-//
-//        Integer[] maxAndStartIndex = new Integer[2];
-//        for (int i = 0; i < a.length; i++) {
-//            if (i <= a.length - nuElementsToCheck) {
-//                for (int j = i; j < i + nuElementsToCheck; j++) {
-//                    sum += a[j];
-//                }
-//            }
-//
-//            if (sum > tempSum) {
-//                tempSum = sum;
-//                index = i;
-//            }
-//            sum = 0;
-//        }
-//        maxAndStartIndex[0] = tempSum;
-//        maxAndStartIndex[1] = index;
-//        return maxAndStartIndex;
-//    }
-//
-//    public static void main(String[] args) {
-//        Integer a[] = {10, 19, 15};
-//
-//        System.out.println(solution(a, 2, 2));
-//
-//    }
-//}
+
+    public  static int reverse(int x) {
+        int rev=0;
+        while (x!=0){
+            rev=rev*10+x%10;
+            x=x/10;
+            if (x>Integer.MAX_VALUE || rev<Integer.MIN_VALUE){
+                return 0;
+            }
+        }
+
+        return rev;
+    }
+
+    public static boolean isPalindrome(int x) {
+        if(x<0){
+            return false;
+        }else {
+            int temp=x;
+            int rev=0;
+            while(x!=0){
+                rev=rev*10+x%10;
+                x=x/10;
+            }
+            return temp == rev;
+        }
+    }
+
+    public int maxSubArray(int[] nums) {
+        int maxSoFar=nums[0];
+        int maxEndingHere=nums[0];
+
+        for(int i=1;i<nums.length;i++){
+            maxEndingHere=Math.max(nums[i],(maxEndingHere+nums[i]));
+            maxSoFar=Math.max(maxEndingHere,maxSoFar);
+        }
+        return maxSoFar;
+
+    }
+
+        public static  int lengthOfLongestSubstring(String s) {
+            int n = s.length();
+            Set<Character> set = new HashSet<>();
+            int ans = 0, i = 0, j = 0;
+            while (i < n && j < n) {
+                // try to extend the range [i, j]
+                if (!set.contains(s.charAt(j))){
+                    set.add(s.charAt(j++));
+                    ans = Math.max(ans, j - i);
+                }
+                else {
+                    set.remove(s.charAt(i++));
+                }
+            }
+            return ans;
+        }
+    }
