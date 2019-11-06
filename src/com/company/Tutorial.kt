@@ -4,7 +4,7 @@ package com.company
  * Created by derekbanas
  */
 
-import java.util.Random
+import java.util.*
 
 fun main(args : Array<String>) {
     println("Hello, world!")

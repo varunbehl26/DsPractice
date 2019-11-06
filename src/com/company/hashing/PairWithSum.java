@@ -15,11 +15,11 @@ public class PairWithSum {
 
     private static void printPairs(int[] a, int sum) {
         HashMap<Integer, Integer> hashMap = new HashMap<>();
-        for (int i = 0; i < a.length; i++) {
-            hashMap.put(a[i], 1);
+        for (int value : a) {
+            hashMap.put(value, 1);
 
-            if (hashMap.containsKey(sum - a[i])) {
-                System.out.println("key found " + a[i] + " " + (sum - a[i]) + "");
+            if (hashMap.containsKey(sum - value)) {
+                System.out.println("key found " + value + " " + (sum - value) + "");
                 break;
             }
         }

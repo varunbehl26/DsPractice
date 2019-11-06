@@ -1,7 +1,6 @@
 package com.company.tree.iterativeTraversal;
 
 import com.company.tree.TreeNode;
-import com.sun.org.apache.regexp.internal.RE;
 
 import java.util.LinkedList;
 import java.util.List;

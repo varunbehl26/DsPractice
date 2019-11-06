@@ -2,7 +2,8 @@ package com.company.interviewbit.arrays;
 
 import java.util.ArrayList;
 
-
+//The algo is to put the number on the position they need to be
+//evaluate number from starting the number which is not equal to number -1 that is the required number
 public class FirstMissingPositive {
     public static void main(String[] args) {
 
@@ -14,32 +15,29 @@ public class FirstMissingPositive {
         System.out.println(firstMissingPositive(list));
     }
 
-    public static int firstMissingPositive(ArrayList<Integer> A) {
-//        int numRange=A.size();
-//        int sum=(numRange*(numRange+1))/2;
-//
-//        for (Integer integer : A) {
-//            if (integer > 0) {
-//                sum -= integer;
-//            }
-//        }
-//
-//        return sum>0?sum:1;
-        for (int i = 0; i < A.size(); i++) {
-            int num = A.get(i);
+    private static int firstMissingPositive(ArrayList<Integer> arr) {
+
+        //start with the  first number and continue till end
+        // position will be the number -1 as values start from zero
+        for (int i = 0; i < arr.size(); i++) {
+            int num = arr.get(i);
             int pos = num - 1;
 
-            if (pos >= 0 && pos < A.size() && A.get(pos) != num) {
-                A.set(i, A.get(pos));
-                A.set(pos, num);
+            //keep setting the number on position
+            if (pos >= 0 && pos < arr.size() && arr.get(pos) != num) {
+                //set the element from the array
+                arr.set(i, arr.get(pos));
+                //keep setting the number on position
+                arr.set(pos, num);
                 i--;
             }
         }
 
-        for (int i = 0; i < A.size(); i++)
-            if (A.get(i) != i + 1)
+        //check whether the next number is equal to previous number plus one
+        for (int i = 0; i < arr.size(); i++)
+            if (arr.get(i) != i + 1)
                 return i + 1;
 
-        return A.size() + 1;
+        return arr.size() + 1;
     }
 }

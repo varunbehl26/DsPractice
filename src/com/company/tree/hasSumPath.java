@@ -1,8 +1,5 @@
 package com.company.tree;
 
-import java.util.HashSet;
-import java.util.Iterator;
-
 public class hasSumPath {
 
     public static void main(String[] args) {

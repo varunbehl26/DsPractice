@@ -6,18 +6,10 @@ import java.util.ArrayList;
 public class LongestCommonPrefix {
     public static void main(String[] args) {
 
-        ArrayList arrayList = new ArrayList();
-        arrayList.add("abcdefgh");
-        arrayList.add("abefghijk");
-        arrayList.add("abcefgh");
-
-
         String[] str = {"abcdefgh", "abefghijk", "abcefgh"};
 
 
         System.out.println(longestCommonPrefix(str));
-
-//        System.out.println(longestCommonPrefix(arrayList));
     }
 
     //https://leetcode.com/media/original_images/14_basic.png

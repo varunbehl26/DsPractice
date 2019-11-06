@@ -3,15 +3,17 @@ package com.company.interviewbit.arrays;
 public class AddNumber {
 
     public static void main(String[] args) {
-        int[] vect = new int[]{1, -7, 8, 9};
+        int[] arr = new int[]{1, -7, 8, 9};
 
-        vect = plusOne(vect);
+        arr = plusOne(arr);
 
-        for (int i = 0; i < vect.length; i++)
-            System.out.print(vect[i] + " ");
+        System.out.println();
+        for (int value : arr) {
+            System.out.print(value + " ");
+        }
     }
 
-    public static int[] plusOne(int[] arr) {
+    private static int[] plusOne(int[] arr) {
         int temp = 0;
         for (int i = 0; i < arr.length; i++) {
             temp += arr[i] * Math.pow(10, arr.length - 1 - i);

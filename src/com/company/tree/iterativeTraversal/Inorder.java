@@ -1,6 +1,5 @@
 package com.company.tree.iterativeTraversal;
 
-import com.company.tree.BinaryTree;
 import com.company.tree.TreeNode;
 
 import java.util.ArrayList;

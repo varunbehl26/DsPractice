@@ -8,19 +8,17 @@ public class Duplicate {
         int[] A = {1, 3, 4, 5, 1};
 
         int max_sum = duplicate(A);
-        System.out.println("Maximum contiguous sum is "
-                + max_sum);
+        System.out.println("Duplicate is " + max_sum);
     }
 
-    private static int duplicate(int[] a) {
-        int size = a.length;
+    private static int duplicate(int[] arr) {
         Map map = new HashMap();
 
-        for (int i1 : a) {
-            if (map.containsKey(i1)) {
-                return i1;
+        for (int i : arr) {
+            if (map.containsKey(i)) {
+                return i;
             }
-            map.put(i1, 1);
+            map.put(i, 1);
         }
         return -1;
     }
