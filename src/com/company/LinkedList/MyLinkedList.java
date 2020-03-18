@@ -47,7 +47,6 @@ public class MyLinkedList {
         }
     }
 
-
     public void print() {
         if (isEmpty()) {
             return;

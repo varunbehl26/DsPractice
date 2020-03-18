@@ -33,7 +33,6 @@ public class Anagram {
             }
         }
         System.out.println("YES");
-        return;
 
     }
 }

@@ -33,7 +33,6 @@ public class BinaryTree {
             Node tmp = queue.poll();
 
             System.out.print(tmp.data + " ");
-
             if (tmp.left != null) {
                 queue.add(tmp.left);
             }

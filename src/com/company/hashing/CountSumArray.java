@@ -6,6 +6,15 @@ public class CountSumArray {
 
     static int arr[] = new int[]{1, 5, 7, -1, 5};
 
+    // Driver method to test the above function
+    public static void main(String[] args) {
+
+        int sum = 6;
+        System.out.println("Count of pairs is " +
+                getPairsCount(arr.length, sum));
+
+    }
+
     // Returns number of pairs in arr[0..n-1] with sum equal
     // to 'sum'
     private static int getPairsCount(int n, int sum) {
@@ -13,12 +22,7 @@ public class CountSumArray {
 
         // Store counts of all elements in map hm
         for (int i = 0; i < n; i++) {
-
-            // initializing value to 0, if key not found
-            if (!hm.containsKey(arr[i]))
-                hm.put(arr[i], 0);
-
-            hm.put(arr[i], hm.get(arr[i]) + 1);
+            hm.put(arr[i], hm.getOrDefault(arr[i], 0) + 1);
         }
         int twice_count = 0;
 
@@ -40,12 +44,5 @@ public class CountSumArray {
         return twice_count / 2;
     }
 
-    // Driver method to test the above function
-    public static void main(String[] args) {
 
-        int sum = 6;
-        System.out.println("Count of pairs is " +
-                getPairsCount(arr.length, sum));
-
-    }
 }

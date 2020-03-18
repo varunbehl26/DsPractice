@@ -3,10 +3,10 @@ package com.company.arrays;
 public class maxPrice {
 
     public static void main(String[] args) {
-        System.out.println(maxProfit(new int[]{2, 4, 1}));
+        System.out.println(highestProfit(new int[]{2, 4, 1}));
     }
 
-    private static int maxProfit(int[] prices) {
+    private static int highestProfit(int[] prices) {
         if (prices == null || prices.length == 0) {
             return 0;
         }

@@ -28,8 +28,7 @@ public class IsSymmetric {
             return false;
         }
 
-        return isSymmetricHelper(left.left,right.right) &&
-                isSymmetricHelper(left.right,right.left);
+        return isSymmetricHelper(left.left, right.right) && isSymmetricHelper(left.right, right.left);
     }
 
 

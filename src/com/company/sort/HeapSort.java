@@ -4,7 +4,8 @@ public class HeapSort {
 
     /*
         Time complexity of heapify is O(Logn).
-        Time complexity of createAndBuildHeap() is O(n)
+        Time complexity of
+        () is O(n)
         overall time complexity of Heap Sort is O(nLogn).
 
         64, 25, 12, 22, 11

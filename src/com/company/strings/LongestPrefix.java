@@ -15,11 +15,13 @@ public class LongestPrefix {
         int size = a.length;
 
         /* if size is 0, return empty string */
-        if (size == 0)
+        if (size == 0) {
             return "";
+        }
 
-        if (size == 1)
+        if (size == 1) {
             return a[0];
+        }
 
         /* sort the array of strings */
         Arrays.sort(a);

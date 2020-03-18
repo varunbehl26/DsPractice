@@ -1,12 +1,8 @@
 package com.company.tree;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class MaximumDepth {
 
     public static void main(String[] args) {
-        List<Integer> list = new ArrayList<>();
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);
         root.right = new TreeNode(3);

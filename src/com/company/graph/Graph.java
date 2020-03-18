@@ -3,10 +3,8 @@ package com.company.graph;
 import java.util.LinkedList;
 
 public class Graph {
-
     int vertices;
     LinkedList<Integer>[] adjListArray;
-
 
     Graph() {
 

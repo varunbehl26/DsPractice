@@ -10,8 +10,8 @@ public class palindrome {
         String lowerCase = A.toLowerCase();
         int i = 0;
         int index = A.length() - 1;
-        int asciiStart = (int) lowerCase.charAt(i);
-        int asciiEnd = (int) lowerCase.charAt(index);
+        int asciiStart = lowerCase.charAt(i);
+        int asciiEnd = lowerCase.charAt(index);
 
         while (i < A.length() && index > i) {
 
@@ -20,11 +20,11 @@ public class palindrome {
 
             if (asciiStart >= 97 && asciiStart <= 122) {
                 i++;
-                asciiStart = (int) lowerCase.charAt(i);
+                asciiStart = lowerCase.charAt(i);
             }
             if (asciiEnd >= 97 && asciiEnd <= 122) {
                 index--;
-                asciiEnd = (int) lowerCase.charAt(index);
+                asciiEnd = lowerCase.charAt(index);
             }
 
             if (i == index) {

@@ -5,11 +5,11 @@ public class SearchingInO {
     final static int MAX = 1000;
 
     // Since array is global, it
-// is initialized as 0.
+    // is initialized as 0.
     static boolean[][] has = new boolean[MAX + 1][2];
 
     // searching if X is Present in
-// the given array or not.
+    // the given array or not.
     static boolean search(int X) {
         if (X >= 0) {
             if (has[X][0] == true) {
