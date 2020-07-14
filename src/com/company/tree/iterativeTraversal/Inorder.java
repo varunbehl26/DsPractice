@@ -48,7 +48,7 @@ public class Inorder {
            cur=nodesStack.pop();
 
            //Adding value to list
-           list.add(cur.val);
+           list.add(cur.value);
 
            //moving towards right
            cur=cur.right;
@@ -65,7 +65,7 @@ public class Inorder {
 
         inorderTraversal(root.left,list);
 
-        list.add(root.val);
+        list.add(root.value);
 
         inorderTraversal(root.right,list);
 

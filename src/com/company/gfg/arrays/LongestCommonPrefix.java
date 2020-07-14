@@ -10,8 +10,6 @@ public class LongestCommonPrefix {
         String[] str = {"abcdefgh", "abcdfghijk", "abcefgh", "abcefsdgh"};
         ArrayList<String> wordList = new ArrayList<>();
         Collections.addAll(wordList, str);
-
-
         System.out.println(longestCommonPrefix(wordList));
     }
 

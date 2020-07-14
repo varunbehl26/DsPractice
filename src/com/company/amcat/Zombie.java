@@ -6,16 +6,17 @@ import java.util.*;
 public class Zombie {
     public static void main(String[] args) {
         ArrayList<List<Integer>> list = new ArrayList<>();
-        list.add(Arrays.asList(0, 1, 1, 0, 1));
-        list.add(Arrays.asList(0, 1, 0, 1, 0));
-        list.add(Arrays.asList(0, 0, 0, 0, 1));
-        list.add(Arrays.asList(0, 1, 0, 0, 0));
+        list.add(Arrays.asList(1, 1, 0, 0));
+        list.add(Arrays.asList(0, 0, 1, 0));
+        list.add(Arrays.asList(0, 0, 0, 0));
+        list.add(Arrays.asList(1, 0, 1, 1));
+        list.add(Arrays.asList(1, 1, 1, 1));
         Zombie z = new Zombie();
-        int result = z.calculateHours(list);
+        int result = z.calculateParks(list);
         System.out.println(result);
     }
 
-    public int calculateHours(List<List<Integer>> grid) {
+    public int calculateParks(List<List<Integer>> grid) {
         int m = grid.size();
         int n = grid.get(0).size();
 
@@ -40,7 +41,7 @@ public class Zombie {
         while (!q.isEmpty()) {
             int size = q.size();
             if (zombies == target) {
-                return hours; // when all are zombies
+                return hours;
             }
 
             for (int i = 0; i < size; i++) {

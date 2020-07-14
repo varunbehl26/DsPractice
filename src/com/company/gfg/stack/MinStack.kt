@@ -4,18 +4,18 @@ fun main() {
 
     //* Your MinStack object will be instantiated and called as such:
     val obj = MinStack()
-    obj.push(1)
-    obj.push(4)
+    obj.push(-2)
+    obj.push(0)
+    obj.push(-3)
+    println(obj.getMin())
     obj.pop()
-    var param_3 = obj.top()
-    var param_4 = obj.getMin()
-    println(param_3)
-    println(param_4)
+    println(obj.top())
+    println(obj.getMin())
 
 
 }
 
-class MinStack() {
+class MinStack {
 
     class StackNode(
             var data: Int,
@@ -23,8 +23,6 @@ class MinStack() {
     )
 
     /** initialize your data structure here. */
-
-    var capacity: Int = 20
     var nodes = arrayListOf<StackNode>()
     var top = -1
     var minSoFar = Int.MAX_VALUE

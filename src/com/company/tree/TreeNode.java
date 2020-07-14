@@ -1,11 +1,11 @@
 package com.company.tree;
 
 public class TreeNode {
-    public int val;
+    public int value;
     public TreeNode left;
     public TreeNode right;
 
     public TreeNode(int x) {
-        val = x;
+        value = x;
     }
 }

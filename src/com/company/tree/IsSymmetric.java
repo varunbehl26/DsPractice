@@ -24,7 +24,7 @@ public class IsSymmetric {
         if (left == null || right == null) {
             return left == right;
         }
-        if (left.val != right.val) {
+        if (left.value != right.value) {
             return false;
         }
 

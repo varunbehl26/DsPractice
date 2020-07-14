@@ -76,9 +76,9 @@ fun main() {
 //    return perfect
 //}
 
-fun findAnagrams(s: String, p: String): List<Int?>? {
+fun findAnagrams(s: String, p: String): List<Int>? {
     val map: MutableMap<Char, Int> = HashMap()
-    val list: MutableList<Int?> = ArrayList()
+    val list: MutableList<Int> = ArrayList()
 
     if (s.length < p.length) return list
 

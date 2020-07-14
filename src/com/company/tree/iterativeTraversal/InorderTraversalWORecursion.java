@@ -64,7 +64,7 @@ public class InorderTraversalWORecursion extends BinaryTree {
                 if (peekNode.right != null && lastNode != peekNode.right) {
                     a = peekNode.right;
                 } else {
-                    result.add(peekNode.val);
+                    result.add(peekNode.value);
                     lastNode = stack.pop();
                 }
 

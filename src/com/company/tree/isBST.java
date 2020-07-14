@@ -8,11 +8,11 @@ public class isBST {
 
 
     private boolean isValidBSTUtils(TreeNode root, long minValue, long maxValue) {
-        if(root == null)
+        if (root == null)
             return true;
-        return (long) root.val > minValue && (long) root.val < maxValue
-                && isValidBSTUtils(root.left, minValue, root.val)
-                && isValidBSTUtils(root.right, root.val, maxValue);
+        return (long) root.value > minValue && (long) root.value < maxValue
+                && isValidBSTUtils(root.left, minValue, root.value)
+                && isValidBSTUtils(root.right, root.value, maxValue);
     }
 }
 

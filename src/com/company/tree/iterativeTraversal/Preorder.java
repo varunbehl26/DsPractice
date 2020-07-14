@@ -35,7 +35,7 @@ class Preorder {
 
         while (root != null) {
             //adding root value
-            list.add(root.val);
+            list.add(root.value);
 
             //if right is not null adding to stack
             if (root.right != null) {
@@ -65,7 +65,7 @@ class Preorder {
         }
 
         while (root!=null){
-            list.add(root.val);
+            list.add(root.value);
 
             if (root.right!=null){
                 rightNodes.add(root.right);
@@ -86,7 +86,7 @@ class Preorder {
             return list;
 
         /* first print data of node */
-        list.add(root.val);
+        list.add(root.value);
 
         /* then recur on left sutree */
         preOrderRecursive(root.left, list);

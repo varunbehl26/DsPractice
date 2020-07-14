@@ -4,6 +4,6 @@ package com.company.gfg
 //    println(countPrimes(10))
 //}
 //
-//fun countPrimes(n: Int): Int {
+//fun countrowss(n: Int): Int {
 //
 //}

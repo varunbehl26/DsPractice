@@ -11,24 +11,15 @@ public class hasSumPath {
         root.left.left.right = new TreeNode(2);
         root.right.left = new TreeNode(13);
         root.right.right = new TreeNode(4);
-
-
         System.out.println(hasPathSum(root, 22));
-
-
-
-
 
     }
 
     public static boolean hasPathSum(TreeNode root, int sum) {
         if (root == null) return false;
 
-        if (root.left == null && root.right == null && sum - root.val == 0) return true;
+        if (root.left == null && root.right == null && root.value == sum) return true;
 
-        return hasPathSum(root.left, sum - root.val) &&
-                hasPathSum(root.right, sum - root.val);
+        return hasPathSum(root.left, sum - root.value) || hasPathSum(root.right, sum - root.value);
     }
-
-
 }

@@ -1,8 +1,27 @@
 package com.company.tree;
 
 import java.util.LinkedList;
+import java.util.Queue;
 
 public class BinaryTree {
+
+    void printLevelQueue() {
+        Queue<Node> queue = new LinkedList();
+        queue.add(root);
+
+        while (!queue.isEmpty()) {
+            Node tmp = queue.poll();
+
+            System.out.print(tmp.data + " ");
+            if (tmp.left != null) {
+                queue.add(tmp.left);
+            }
+            if (tmp.right != null) {
+                queue.add(tmp.right);
+            }
+        }
+
+    }
 
     public Node root;
 
@@ -25,22 +44,14 @@ public class BinaryTree {
         }
     }
 
-    void printLevelQueue() {
-        LinkedList<Node> queue = new LinkedList();
-        queue.add(root);
+    public static class Node {
+        public int data;
+        public Node left, right;
 
-        while (!queue.isEmpty()) {
-            Node tmp = queue.poll();
-
-            System.out.print(tmp.data + " ");
-            if (tmp.left != null) {
-                queue.add(tmp.left);
-            }
-            if (tmp.right != null) {
-                queue.add(tmp.right);
-            }
+        public Node(int item) {
+            data = item;
+            left = right = null;
         }
-
     }
 
     private void printLevelRecursive() {
@@ -61,14 +72,6 @@ public class BinaryTree {
         }
     }
 
-    public static class Node {
-        public int data;
-        public Node left, right;
 
-        public Node(int item) {
-            data = item;
-            left = right = null;
-        }
-    }
 
 }

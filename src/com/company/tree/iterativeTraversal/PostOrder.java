@@ -35,7 +35,7 @@ public class PostOrder {
 
             if(curr != null) {
                 stack.push(curr);
-                result.addFirst(curr.val);  // Reverse the process of preorder
+                result.addFirst(curr.value);  // Reverse the process of preorder
                 curr = curr.right;             // Reverse the process of preorder
             } else {
                 TreeNode node = stack.pop();
@@ -52,8 +52,8 @@ public class PostOrder {
             return linkedList;
         }
         postOrderRecursive(root.left,linkedList);
-        postOrderRecursive(root.right,linkedList);
-        linkedList.add(root.val);
+        postOrderRecursive(root.right, linkedList);
+        linkedList.add(root.value);
         return linkedList;
     }
 

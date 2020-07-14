@@ -1,74 +1,71 @@
-package com.company.gfg;
+package com.company.gfg
 
-import java.util.LinkedList;
-import java.util.Queue;
-
-public class RottingOranges {
-
-    int delta[][] = new int[][]{
-            {-1, 0}, {1, 0}, {0, -1}, {0, 1}
-    };
-
-    public static void main(String[] args) {
-        int[][] grid = {{2, 1, 1}, {1, 1, 0}, {0, 1, 1}};
-        com.company.gfg.arrays.RottingOranges rottingOranges = new com.company.gfg.arrays.RottingOranges();
-        System.out.println(rottingOranges.orangesRotting(grid));
+import java.util.*
 
 
+fun main() {
+    val grid = arrayOf(intArrayOf(2, 1, 1),
+            intArrayOf(1, 1, 0),
+            intArrayOf(0, 1, 1))
+
+    println(orangesRotting(grid))
+}
+
+fun orangesRotting(grid: Array<IntArray>?): Int {
+    if (grid == null || grid.isEmpty()) {
+        return 0
     }
-
-    public int orangesRotting(int[][] grid) {
-        if (grid == null || grid.length == 0) return 0;
-        final int m = grid.length;
-        final int n = grid[0].length;
-
-        Queue<Orange> oranges = new LinkedList<>();
-        int totalOranges = 0;
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                // If the orange is rotten, put it into queue
-                if (grid[i][j] == 2)
-                    oranges.offer(new Orange(i, j, 0));
-                if (grid[i][j] != 0) {
-                    totalOranges++;
-                }
+    val rows = grid.size
+    val cols: Int = grid[0].size
+    val queue: Queue<IntArray> = LinkedList()
+    var countFresh = 0
+    //Put the position of all rotten oranges in queue
+    //count the number of fresh oranges
+    for (i in 0 until rows) {
+        for (j in 0 until cols) {
+            if (grid[i][j] == 2) {
+                queue.offer(intArrayOf(i, j))
+            } else if (grid[i][j] == 1) {
+                countFresh++
             }
         }
+    }
+    //if count of fresh oranges is zero --> return 0
+    if (countFresh == 0) {
+        return 0
+    }
+    var count = 0
+    val dirs = arrayOf(intArrayOf(1, 0),
+            intArrayOf(-1, 0),
+            intArrayOf(0, 1),
+            intArrayOf(0, -1))
 
-        int answer = 0;
-        int rottenOranges = 0;
-        while (!oranges.isEmpty()) {
-            Orange orange = oranges.poll();
-            rottenOranges++;
-            answer = orange.distance;
-            for (int i = 0; i < 4; i++) {
-                int dx = delta[i][0], dy = delta[i][1];
-                int x = orange.row + dx;
-                int y = orange.col + dy;
-                if (x >= 0 && y >= 0 && x < m && y < n && grid[x][y] == 1) {
-                    // If x and y are valid co-ordinates and orange at
-                    // co-ordinate (x, y) is fresh => put it in queue
-                    // and make it rotten
-                    oranges.offer(new Orange(x, y, orange.distance + 1));
-                    grid[x][y] = 2;
-                }
+    //bfs starting from initially rotten oranges
+    while (!queue.isEmpty()) {
+        ++count
+        val size: Int = queue.size
+        for (i in 0 until size) {
+            val point = queue.poll()
+            for (dir in dirs) {
+                val x = point[0] + dir[0]
+                val y = point[1] + dir[1]
+                //if x or y is out of bound
+                //or the orange at (x , y) is already rotten
+                //or the cell at (x , y) is empty
+                //we do nothing
+                if (x < 0 || y < 0 || x >= rows || y >= cols || grid[x][y] == 0 || grid[x][y] == 2) continue
+                //mark the orange at (x , y) as rotten
+                grid[x][y] = 2
+                //put the new rotten orange at (x , y) in queue
+                queue.offer(intArrayOf(x, y))
+                //decrease the count of fresh oranges by 1
+                countFresh--
             }
         }
-        if (rottenOranges < totalOranges) {
-            return -1;
-        }
-        return answer;
     }
-
-    class Orange {
-        int row, col, distance;
-
-        // Here distance denotes the number of days required
-        // to change state of this orange from fresh to rotten
-        public Orange(int row, int col, int distance) {
-            this.row = row;
-            this.col = col;
-            this.distance = distance;
-        }
+    return if (countFresh == 0) {
+        count - 1
+    } else {
+        -1
     }
 }
