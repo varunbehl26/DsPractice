@@ -5,12 +5,6 @@ import kotlin.math.pow
 
 
 fun main() {
-//    print(checkStraightLine(arrayOf(intArrayOf(-4, -3)
-//            , intArrayOf(1, 0)
-//            , intArrayOf(3, -1)
-//            , intArrayOf(0, -1)
-//            , intArrayOf(-5, 2)
-//    )))
 
     print(findJudge(3, arrayOf(
             intArrayOf(1, 3)
