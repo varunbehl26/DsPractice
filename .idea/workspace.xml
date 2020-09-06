@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2be01b86-8397-427c-99a2-fe9d502f70f1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/AngleClock.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/MinRotated.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/MyPow.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/ReverseWords.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/SingeNumber3.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Sqrt.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Test.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/WordSearch.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/design/WordDictionary.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/graph/GraphKotlin.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DsPractice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DsPractice.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Cal.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Cal.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,11 +175,29 @@
       <workItem from="1595742864395" duration="1756000" />
       <workItem from="1596683277388" duration="2980000" />
       <workItem from="1597675027615" duration="638000" />
+      <workItem from="1599395072160" duration="750000" />
     </task>
+    <task id="LOCAL-00001" summary="added new files">
+      <created>1599395326607</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1599395326607</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="added new files" />
+    <option name="LAST_COMMIT_MESSAGE" value="added new files" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="304" y="157" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595481217433">
@@ -210,6 +212,14 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="528" y="268" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-2560.23.2560.1057/0.0.1680.1050@0.0.1680.1050" timestamp="1597675031835" />
+    <state x="417" y="14" key="CommitChangelistDialog2" timestamp="1599395326305">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="417" y="14" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1599395326305" />
+    <state x="100" y="100" width="1480" height="850" key="DiffContextDialog" timestamp="1599395840839">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="100" y="100" width="1480" height="850" key="DiffContextDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1599395840839" />
     <state width="792" height="177" key="GridCell.Tab.0.bottom" timestamp="1595744882739">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -250,9 +260,17 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="455" y="145" key="NewModule_or_Project.wizard/-2560.23.2560.1057/0.0.1680.1050@0.0.1680.1050" timestamp="1597675061576" />
+    <state x="440" y="261" key="Vcs.Push.Dialog.v2" timestamp="1599395341392">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="440" y="261" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1599395341392" />
     <state x="542" y="60" width="596" height="870" key="find.popup" timestamp="1595683813352">
       <screen x="0" y="23" width="1680" height="944" />
     </state>
     <state x="542" y="60" width="596" height="870" key="find.popup/0.23.1680.944@0.23.1680.944" timestamp="1595683813352" />
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1599395820222">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1599395820222" />
   </component>
 </project>

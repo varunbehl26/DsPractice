@@ -32,17 +32,6 @@ fun findJudge(N: Int, trust: Array<IntArray>): Int {
 }
 
 
-fun isPerfectSquare(num: Int): Boolean {
-    if (num == 1) {
-        return true
-    }
-    for (i in 2..num / 2) {
-        if (num % i == 0 && i * i == num) {
-            return true
-        }
-    }
-    return false
-}
 
 fun checkStraightLine(coordinates: Array<IntArray>): Boolean {
     val m = (coordinates[1][1] - coordinates[0][1]) / (coordinates[1][0] - coordinates[0][0]).toFloat()
