@@ -1,4 +1,4 @@
-package com.company.easy;
+package com.company.easy.arrays;
 
 
 //https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/564/
@@ -29,6 +29,17 @@ public class maxProfit {
         }
         return profit;
     }
+
+    public static int maxProfitBest(int[] prices) {
+        int maxProfit = 0;
+        for (int i = 1; i < prices.length; i++) {
+            if (prices[i] > prices[i - 1]) {
+                maxProfit += prices[i] - prices[i - 1];
+            }
+        }
+        return maxProfit;
+    }
+
 
     public static void main(String[] args) {
         int[] arr = {7, 6, 4, 3, 1};

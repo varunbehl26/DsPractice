@@ -1,7 +1,6 @@
 package com.company.gfg.arrays
 
 
-//TO FIND THE PREFIX
 
 fun main() {
     val strings = arrayOf("flower", "flow", "flight")
