@@ -4,7 +4,7 @@ public class LinkedList {
 
     public ListNode head;
 
-    void insert(int value) {
+    public static void insert(ListNode head, int value) {
         ListNode node = new ListNode(value);
         if (head == null) {
             head = node;

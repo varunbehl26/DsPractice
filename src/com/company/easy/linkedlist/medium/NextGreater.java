@@ -5,60 +5,44 @@ import com.company.easy.linkedlist.ListNode;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
 
 public class NextGreater extends LinkedList {
 
-//    public static int[] nextLargerNodes(ListNode head) {
-//        List<Integer> list = new ArrayList<>();
-//        ListNode listNode = head;
-//        Stack<Integer> stack = new Stack();
-//
-//        while (listNode != null) {
-//            stack.push(listNode.val);
-//            listNode = listNode.next;
-//        }
-//
-//        int max = Integer.MIN_VALUE;
-//        while (!stack.isEmpty()) {
-//            int pop = stack.pop();
-//            if (pop > max) {
-//                max = pop;
-//                list.add(0);
-//            } else {
-//                list.add(max);
-//            }
-//        }
-//        int[] ints = new int[list.size()];
-//
-//        int j = 0;
-//        for (int i = list.size() - 1; i >= 0; i--) {
-//            ints[j++] = list.get(i);
-//        }
-//
-//        return ints;
-//    }
 
-    public static int[] nextLargerNodes(ListNode head) {
+    private static int[] nextLargerNodes(ListNode head) {
+
+        Stack<Integer> stack = new Stack<>();
         List<Integer> list = new ArrayList<>();
 
         ListNode listNode = head;
+        int index = 0;
 
         while (listNode != null) {
-            ListNode start = listNode;
-            ListNode working = start.next;
-            while (start.next != null && working.val < start.val) {
-                working = working.next;
+
+            list.add(listNode.val);
+
+            while (!stack.isEmpty() && list.get(stack.peek()) < listNode.val) {
+                list.set(stack.pop(), listNode.val);
             }
-            list.add(working.val);
+
+            stack.push(index++);
             listNode = listNode.next;
         }
 
-
-        for (int i = list.size() - 1; i >= 0; i--) {
-            System.out.println(list.get(i));
+        while (!stack.isEmpty()) {
+            list.set(stack.pop(), 0);
         }
 
         return listToArray(list);
+    }
+
+    private static int[] listToArray(List<Integer> list) {
+        int[] result = new int[list.size()];
+        for (int i = 0; i < list.size(); i++) {
+            result[i] = list.get(i);
+        }
+        return result;
     }
 
 
@@ -78,11 +62,4 @@ public class NextGreater extends LinkedList {
         }
     }
 
-    private static int[] listToArray(List<Integer> list) {
-        int[] ints = new int[list.size()];
-        for (int i = list.size() - 1, j = 0; i >= 0; i--) {
-            ints[j++] = list.get(i);
-        }
-        return ints;
-    }
 }
