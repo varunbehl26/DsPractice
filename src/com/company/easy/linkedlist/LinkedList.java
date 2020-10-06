@@ -17,6 +17,15 @@ public class LinkedList {
         }
     }
 
+    public static int findLength(ListNode root) {
+        int count = 0;
+        while (root != null) {
+            root = root.next;
+            count++;
+        }
+        return count;
+    }
+
     public static void print(ListNode head) {
         if (head == null) {
             return;
