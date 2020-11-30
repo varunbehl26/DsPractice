@@ -1,7 +1,6 @@
 package com.company.gfg.arrays
 
 
-
 fun main() {
     val strings = arrayOf("flower", "flow", "flight")
     print(longestCommonPrefix(strings))

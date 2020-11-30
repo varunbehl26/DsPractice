@@ -6,7 +6,7 @@ package com.company
 
 import java.util.*
 
-fun main(args : Array<String>) {
+fun main(args: Array<String>) {
     println("Hello, world!")
 
     // ----- VARIABLES -----
@@ -55,7 +55,7 @@ fun main(args : Array<String>) {
     */
 
     // Booleans are either true or false
-    if (true is Boolean){
+    if (true is Boolean) {
         print("true is boolean\n")
     }
 
@@ -113,7 +113,7 @@ fun main(args : Array<String>) {
     println("2nd Index : ${str1.get(2)}")
 
     // Get a substring from start up to but not including end
-    println("Index 2-7 : ${str1.subSequence(2,8)}")
+    println("Index 2-7 : ${str1.subSequence(2, 8)}")
 
     // Checks if a string contains another
     println("Contains random : ${str1.contains("random")}")
@@ -137,7 +137,7 @@ fun main(args : Array<String>) {
     println("Doug in Array : ${myArray.contains("Doug")}")
 
     // Get first 2 elements in array as an array
-    var partArray = myArray.copyOfRange(0,1)
+    var partArray = myArray.copyOfRange(0, 1)
 
     // Get the first element
     println("First : ${str1.first()}")
@@ -146,11 +146,11 @@ fun main(args : Array<String>) {
     println("Doug Index : ${str1.indexOf("Doug")}")
 
     // Create an array of squares
-    var sqArray = Array(5, { x -> x * x})
+    var sqArray = Array(5, { x -> x * x })
     println(sqArray[2])
 
     // There are type specific arrays
-    var arr2: Array<Int> = arrayOf(1,2,3)
+    var arr2: Array<Int> = arrayOf(1, 2, 3)
     println(arr2[2])
 
 
@@ -174,10 +174,10 @@ fun main(args : Array<String>) {
     val rng3 = oneTo10.step(3)
 
     // Cycle through a range and print
-    for(x in rng3) println("rng3 : $x")
+    for (x in rng3) println("rng3 : $x")
 
     // Reverse a range
-    for(x in tenTo1.reversed()) println("Reverse : $x")
+    for (x in tenTo1.reversed()) println("Reverse : $x")
 
 
     // ----- CONDITIONALS -----
@@ -186,11 +186,11 @@ fun main(args : Array<String>) {
 
     val age = 8
 
-    if (age < 5){
+    if (age < 5) {
         println("Go to Preschool")
-    } else if (age == 5){
+    } else if (age == 5) {
         println("Go to Kindergarten")
-    } else if ((age > 5) && (age <= 17)){
+    } else if ((age > 5) && (age <= 17)) {
         val grade = age - 5
         println("Go to Grade $grade")
     } else {
@@ -201,7 +201,7 @@ fun main(args : Array<String>) {
     when (age) {
 
         // Match a list
-        0,1,2,3,4 -> println("Go to Preschool")
+        0, 1, 2, 3, 4 -> println("Go to Preschool")
 
         // Match a specific value
         5 -> println("Go to Kindergarten")
@@ -222,7 +222,7 @@ fun main(args : Array<String>) {
     // ranges, or anything else that implements the
     // iterator function
 
-    for (x in 1..10){
+    for (x in 1..10) {
         println("Loop : $x")
     }
 
@@ -233,13 +233,13 @@ fun main(args : Array<String>) {
     // While loops while a condition is true
     var guess = 0
 
-    while(magicNum != guess){
+    while (magicNum != guess) {
         guess += 1
     }
 
     println("Magic num is $magicNum and you guessed $guess")
 
-    for (x in 1..20){
+    for (x in 1..20) {
         if (x % 2 == 0) {
 
             // Continue jumps back to the top of the loop
@@ -253,15 +253,15 @@ fun main(args : Array<String>) {
 
     }
 
-    var arr3: Array<Int> = arrayOf(3,6,9)
+    var arr3: Array<Int> = arrayOf(3, 6, 9)
 
     // Iterate for indexes
-    for (i in arr3.indices){
+    for (i in arr3.indices) {
         println("Mult 3 : ${arr3[i]}")
     }
 
     // Output indexes
-    for ((index, value) in arr3.withIndex()){
+    for ((index, value) in arr3.withIndex()) {
         println("Index : $index & Value : $value")
     }
 
@@ -270,19 +270,19 @@ fun main(args : Array<String>) {
     // Functions start with fun, function name,
     // parameters and return type
 
-    fun add(num1: Int, num2: Int) : Int = num1 + num2
-    println("5 + 4 = ${add(5,4)}")
+    fun add(num1: Int, num2: Int): Int = num1 + num2
+    println("5 + 4 = ${add(5, 4)}")
 
     // You don't need a return type with single line functions
     // You can define default values for parameters
     fun subtract(num1: Int = 1, num2: Int = 1) = num1 - num2
-    println("5 - 4 = ${subtract(5,4)}")
+    println("5 - 4 = ${subtract(5, 4)}")
 
     // You can use named parameters
     println("4 - 5 = ${subtract(num2 = 5, num1 = 4)}")
 
     // Use unit if you return nothing
-    fun sayHello(name: String) : Unit = println("Hello $name")
+    fun sayHello(name: String): Unit = println("Hello $name")
     sayHello("Derek")
 
     // Functions can return 2 values with Pair and 3 with Triple
@@ -290,11 +290,11 @@ fun main(args : Array<String>) {
     println("1 $two $three")
 
     // Send a variable number of parameters
-    println("Sum : ${getSum(1,2,3,4,5)}")
+    println("Sum : ${getSum(1, 2, 3, 4, 5)}")
 
     // We can define function literals
-    val multiply = {num1: Int, num2: Int -> num1 * num2}
-    println("5 * 3 = ${multiply(5,3)}")
+    val multiply = { num1: Int, num2: Int -> num1 * num2 }
+    println("5 * 3 = ${multiply(5, 3)}")
 
     // Calculate the Factorial with Tail Recursion
     // Factorial 5 * 4 * 3 * 2 * 1
@@ -318,8 +318,8 @@ fun main(args : Array<String>) {
     println("5 * 3 = ${mult3(5)}")
 
     // A function that receives a list and a function
-    val multiply2 = {num1: Int -> num1 * 2}
-    val numList2 = arrayOf(1,2,3,4,5)
+    val multiply2 = { num1: Int -> num1 * 2 }
+    val numList2 = arrayOf(1, 2, 3, 4, 5)
     mathOnList(numList2, multiply2)
 
     // ----- COLLECTION OPERATORS -----
@@ -333,18 +333,18 @@ fun main(args : Array<String>) {
     println("Fold Sum : $listSum2")
 
     // Check if any values are even
-    println("Evens : ${numList2.any {it % 2 == 0}}")
+    println("Evens : ${numList2.any { it % 2 == 0 }}")
 
     // Check if all values are even
-    println("Evens : ${numList2.all {it % 2 == 0}}")
+    println("Evens : ${numList2.all { it % 2 == 0 }}")
 
     // Return a list of values greater then 3
-    val big3 = numList2.filter { it > 3}
+    val big3 = numList2.filter { it > 3 }
     big3.forEach { n -> println(">3 : $n") }
 
     // Use Map to perform an action on every item
     // and return a new list
-    val times7 = numList2.map {it * 7}
+    val times7 = numList2.map { it * 7 }
     times7.forEach { n -> println("*7 : $n") }
 
     // ----- EXCEPTION HANDLING -----
@@ -352,14 +352,14 @@ fun main(args : Array<String>) {
 
     val divisor = 2
 
-    try{
-        if (divisor == 0){
+    try {
+        if (divisor == 0) {
             throw IllegalArgumentException("Can't Divide by Zero")
         } else {
-            println("5 / $divisor = ${5/divisor}")
+            println("5 / $divisor = ${5 / divisor}")
         }
 
-    } catch (e: IllegalArgumentException){
+    } catch (e: IllegalArgumentException) {
         println("${e.message}")
     }
 
@@ -367,10 +367,10 @@ fun main(args : Array<String>) {
     // There are immutable Lists and mutable MutableLists
 
     // Create a mutable list
-    var list1: MutableList<Int> = mutableListOf(1,2,3,4,5)
+    var list1: MutableList<Int> = mutableListOf(1, 2, 3, 4, 5)
 
     // Create an immutable list
-    val list2: List<Int> = listOf(1,2,3)
+    val list2: List<Int> = listOf(1, 2, 3)
 
     // Add an item
     list1.add(6)
@@ -429,7 +429,7 @@ fun main(args : Array<String>) {
     map.remove(2)
 
     // Iterate and get keys and values
-    for((x, y) in map){
+    for ((x, y) in map) {
         println("Key : $x Value : $y")
     }
 
@@ -479,7 +479,7 @@ fun main(args : Array<String>) {
     var nullVal2 = returnNull()
 
     // This is a smart cast
-    if(nullVal2 != null) {
+    if (nullVal2 != null) {
         println(nullVal2.length)
     }
 
@@ -496,12 +496,12 @@ fun main(args : Array<String>) {
 // ----- FUNCTIONS -----
 
 // Returns 2 values
-fun nextTwo(num: Int): Pair<Int, Int>{
-    return Pair(num+1, num+2)
+fun nextTwo(num: Int): Pair<Int, Int> {
+    return Pair(num + 1, num + 2)
 }
 
 // Receive variable number of parameters
-fun getSum(vararg nums: Int): Int{
+fun getSum(vararg nums: Int): Int {
     var sum = 0
 
     // For each value in the array add it to sum
@@ -520,11 +520,11 @@ fun fact(x: Int): Int {
 
 // Returns a custom function that multiplies values
 // times the value passed to it
-fun makeMathFunc(num1: Int): (Int) -> Int = { num2 -> num1 * num2}
+fun makeMathFunc(num1: Int): (Int) -> Int = { num2 -> num1 * num2 }
 
 // Receives a list and a function to use on the list
-fun mathOnList(numList: Array<Int>, myFunc: (num: Int) -> Int){
-    for(num in numList){
+fun mathOnList(numList: Array<Int>, myFunc: (num: Int) -> Int) {
+    for (num in numList) {
         println("MathOnList : ${myFunc(num)}")
     }
 }
@@ -534,7 +534,7 @@ fun mathOnList(numList: Array<Int>, myFunc: (num: Int) -> Int){
 // Classes are final by default unless marked open
 // The fields must also be marked as open
 
-open class Animal (val name: String, var height: Double, var weight: Double){
+open class Animal(val name: String, var height: Double, var weight: Double) {
 
     // Objects are initialized in init
     init {
@@ -545,17 +545,17 @@ open class Animal (val name: String, var height: Double, var weight: Double){
 
         // If these requirements aren't met an
         // IllegalArgumentException is thrown
-        require(!name.matches(regex)) {"Animal Name can't Contain Numbers"}
+        require(!name.matches(regex)) { "Animal Name can't Contain Numbers" }
 
-        require(height > 0) {"Height must be greater then 0"}
+        require(height > 0) { "Height must be greater then 0" }
 
-        require(weight > 0) {"Weight must be greater then 0"}
+        require(weight > 0) { "Weight must be greater then 0" }
 
     }
 
     // If you want to allow overriding of this method
     // you must use open
-    open fun getInfo(): Unit{
+    open fun getInfo(): Unit {
         println("$name is $height tall and weighs $weight")
     }
 }
@@ -564,10 +564,10 @@ open class Animal (val name: String, var height: Double, var weight: Double){
 class Dog(name: String,
           height: Double,
           weight: Double,
-          var owner: String) : Animal(name, height, weight){
+          var owner: String) : Animal(name, height, weight) {
 
     // Overriding Animal method
-    override fun getInfo(): Unit{
+    override fun getInfo(): Unit {
         println("$name is $height tall, weighs $weight and is owned by $owner")
     }
 
@@ -588,11 +588,11 @@ interface Flyable {
 // To implement the interface we follow the
 // constructor parameters with a colon and the
 // interface name
-class Bird constructor(val name: String, override var flies: Boolean = true) : Flyable{
+class Bird constructor(val name: String, override var flies: Boolean = true) : Flyable {
 
     // We must also override any methods in the interface
-    override fun fly(distMiles: Double): Unit{
-        if(flies){
+    override fun fly(distMiles: Double): Unit {
+        if (flies) {
             println("$name flies $distMiles miles")
         }
     }

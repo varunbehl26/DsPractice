@@ -47,12 +47,12 @@ public class GFG {
 //        return true;
 //    }
 
-    public  static int reverse(int x) {
-        int rev=0;
-        while (x!=0){
-            rev=rev*10+x%10;
-            x=x/10;
-            if (x>Integer.MAX_VALUE || rev<Integer.MIN_VALUE){
+    public static int reverse(int x) {
+        int rev = 0;
+        while (x != 0) {
+            rev = rev * 10 + x % 10;
+            x = x / 10;
+            if (x > Integer.MAX_VALUE || rev < Integer.MIN_VALUE) {
                 return 0;
             }
         }
@@ -61,45 +61,44 @@ public class GFG {
     }
 
     public static boolean isPalindrome(int x) {
-        if(x<0){
+        if (x < 0) {
             return false;
-        }else {
-            int temp=x;
-            int rev=0;
-            while(x!=0){
-                rev=rev*10+x%10;
-                x=x/10;
+        } else {
+            int temp = x;
+            int rev = 0;
+            while (x != 0) {
+                rev = rev * 10 + x % 10;
+                x = x / 10;
             }
             return temp == rev;
         }
     }
 
-    public int maxSubArray(int[] nums) {
-        int maxSoFar=nums[0];
-        int maxEndingHere=nums[0];
+    public static int lengthOfLongestSubstring(String s) {
+        int n = s.length();
+        Set<Character> set = new HashSet<>();
+        int ans = 0, i = 0, j = 0;
+        while (i < n && j < n) {
+            // try to extend the range [i, j]
+            if (!set.contains(s.charAt(j))) {
+                set.add(s.charAt(j++));
+                ans = Math.max(ans, j - i);
+            } else {
+                set.remove(s.charAt(i++));
+            }
+        }
+        return ans;
+    }
 
-        for(int i=1;i<nums.length;i++){
-            maxEndingHere=Math.max(nums[i],(maxEndingHere+nums[i]));
-            maxSoFar=Math.max(maxEndingHere,maxSoFar);
+    public int maxSubArray(int[] nums) {
+        int maxSoFar = nums[0];
+        int maxEndingHere = nums[0];
+
+        for (int i = 1; i < nums.length; i++) {
+            maxEndingHere = Math.max(nums[i], (maxEndingHere + nums[i]));
+            maxSoFar = Math.max(maxEndingHere, maxSoFar);
         }
         return maxSoFar;
 
     }
-
-        public static  int lengthOfLongestSubstring(String s) {
-            int n = s.length();
-            Set<Character> set = new HashSet<>();
-            int ans = 0, i = 0, j = 0;
-            while (i < n && j < n) {
-                // try to extend the range [i, j]
-                if (!set.contains(s.charAt(j))){
-                    set.add(s.charAt(j++));
-                    ans = Math.max(ans, j - i);
-                }
-                else {
-                    set.remove(s.charAt(i++));
-                }
-            }
-            return ans;
-        }
-    }
+}

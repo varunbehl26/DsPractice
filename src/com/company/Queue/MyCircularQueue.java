@@ -6,7 +6,7 @@ public class MyCircularQueue {
     // store elements
     private int[] data;
     // a pointer to indicate the start position
-    private int front, rear=-1,capacity=0;
+    private int front, rear = -1, capacity = 0;
 
 
     /**
@@ -14,6 +14,21 @@ public class MyCircularQueue {
      */
     public MyCircularQueue(int k) {
         data = new int[k];
+    }
+
+    public static void main(String[] args) {
+
+        MyCircularQueue circularQueue = new MyCircularQueue(3); // set the size to be 3
+        circularQueue.enQueue(1);  // return true
+        circularQueue.enQueue(2);  // return true
+        circularQueue.enQueue(3);  // return true
+        circularQueue.enQueue(4);  // return false, the queue is full
+        circularQueue.Rear();  // return 3
+        circularQueue.isFull();  // return true
+        circularQueue.deQueue();  // return true
+        circularQueue.enQueue(4);  // return true
+        circularQueue.Rear();  // return 4
+
     }
 
     /**
@@ -71,22 +86,6 @@ public class MyCircularQueue {
      */
     public boolean isFull() {
         return capacity == data.length;
-
-    }
-
-
-    public static void main(String[] args) {
-
-        MyCircularQueue circularQueue = new MyCircularQueue(3); // set the size to be 3
-        circularQueue.enQueue(1);  // return true
-        circularQueue.enQueue(2);  // return true
-        circularQueue.enQueue(3);  // return true
-        circularQueue.enQueue(4);  // return false, the queue is full
-        circularQueue.Rear();  // return 3
-        circularQueue.isFull();  // return true
-        circularQueue.deQueue();  // return true
-        circularQueue.enQueue(4);  // return true
-        circularQueue.Rear();  // return 4
 
     }
 

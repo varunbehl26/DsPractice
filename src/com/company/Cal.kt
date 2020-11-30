@@ -7,9 +7,7 @@ import kotlin.math.pow
 fun main() {
 
     print(findJudge(3, arrayOf(
-            intArrayOf(1, 3)
-            , intArrayOf(2, 3)
-            , intArrayOf(3, 1)
+            intArrayOf(1, 3), intArrayOf(2, 3), intArrayOf(3, 1)
     )))
 }
 
@@ -30,7 +28,6 @@ fun findJudge(N: Int, trust: Array<IntArray>): Int {
     return -1
 
 }
-
 
 
 fun checkStraightLine(coordinates: Array<IntArray>): Boolean {

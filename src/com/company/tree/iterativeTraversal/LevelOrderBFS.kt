@@ -36,7 +36,7 @@ object LevelOrderBFS {
                         queue.add(queuePoll.right)
                     }
                 }
-                subList.add(queuePoll.value)
+                subList.add(queuePoll.`val`)
             }
             wrapList.add(subList)
         }
@@ -64,9 +64,9 @@ object LevelOrderBFS {
                     queue.add(node.right)
                 }
                 if (zigzag) {
-                    levelList.addFirst(node.value)
+                    levelList.addFirst(node.`val`)
                 } else {
-                    levelList.add(node.value)
+                    levelList.add(node.`val`)
                 }
             }
             resultList.add(levelList)

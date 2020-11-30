@@ -2,16 +2,6 @@ package com.company.LinkedList;
 
 public class MergeTwoList {
 
-    static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
-
-
     public static void main(String[] args) {
         ListNode l1 = new ListNode(1);
         l1.next = new ListNode(2);
@@ -26,7 +16,6 @@ public class MergeTwoList {
 
         System.out.println(l2.val);
     }
-
 
     public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         if (l1 == null && l2 == null) {
@@ -60,5 +49,14 @@ public class MergeTwoList {
         }
 
         return node.next;
+    }
+
+    static class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode(int x) {
+            val = x;
+        }
     }
 }
