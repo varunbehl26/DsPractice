@@ -1,6 +1,6 @@
 package com.company.tree
 
-private fun maxDepth(root: TreeNode?): Int {
+fun maxDepth(root: TreeNode?): Int {
     if (root == null) {
         return 0
     }
