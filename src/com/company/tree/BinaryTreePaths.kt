@@ -2,7 +2,6 @@ package com.company.tree
 
 import java.util.*
 
-//TODO
 fun binaryTreePaths(root: TreeNode?): List<String>? {
     val res: MutableList<String> = ArrayList()
     val stringBuilder = StringBuilder()
