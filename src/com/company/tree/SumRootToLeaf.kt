@@ -1,6 +1,7 @@
 package com.company.tree
 
 import java.util.*
+//TODO
 
 fun sumRootToLeaf(node: TreeNode?): Int {
     var root = node
@@ -54,7 +55,7 @@ fun sumRootToLeafRecursive(root: TreeNode?): Int {
 
 fun main() {
     val arr = arrayOf(1, 0, 1, 0, 1, 0, 1, null, null)
-    val node = constructBinarySearchTreeInOrder(arr)
+    val node = constructBinarySearchTree(arr)
     val sum = sumRootToLeafRecursive(node)
     print(sum)
 }

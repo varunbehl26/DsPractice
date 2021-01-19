@@ -1,7 +1,6 @@
 package com.company.tree
 
 fun lowestCommonAncestorRecursive(root: TreeNode?, p: TreeNode, q: TreeNode): TreeNode? {
-
     root ?: return root
 
     // Value of current node or parent node.

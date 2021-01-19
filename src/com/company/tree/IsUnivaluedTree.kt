@@ -30,6 +30,6 @@ fun isUnivalTreeRecursion(root: TreeNode): Boolean {
 
 fun main() {
     val arr = arrayOf(1, 1, 1, 2, 1, null, 1)
-    val node = constructBinarySearchTreeInOrder(arr)
+    val node = constructBinarySearchTree(arr)
     print(isUnivalTree(node))
 }

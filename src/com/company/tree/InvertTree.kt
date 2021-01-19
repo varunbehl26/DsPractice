@@ -39,7 +39,7 @@ fun invertTreeRecursive(root: TreeNode?): TreeNode? {
 }
 
 fun main() {
-    val root = constructBinarySearchTreeInOrder(arrayOf(4, 2, 7, 1, 3, 6, 9))
+    val root = constructBinarySearchTree(arrayOf(4, 2, 7, 1, 3, 6, 9))
     val invertRoot = invertTree(root)
     traverseInOrder(invertRoot) { print(it) }
 

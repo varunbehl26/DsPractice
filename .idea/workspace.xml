@@ -29,33 +29,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2be01b86-8397-427c-99a2-fe9d502f70f1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/leetcodeDecember/canPlaceFlowers.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/leetcodeDecember/kthFactor.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/leetcodeDecember/maxDepth.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/leetcodeDecember/numPairsDivisibleBy60.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/leetcodeDecember/validMountainArray.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/stack/StackArrayKt.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/stack/StackLinkedListKt.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/stack/StackNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/stack/calPoints.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/stack/nextGreaterElement.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/stack/removeDuplicates.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/stack/removeOuterParentheses.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/tree/levelOrdeNArrayTreer.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/RottingOranges.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/tree/bstFromPreorder.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/tree/constructMaximumBinaryTree.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/tree/deepestLeavesSum.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/tree/getAllElements.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/tree/insertIntoBST.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/tree/isBalanced.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/tree/lcaDeepestLeaves.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/tree/sumEvenGrandparent.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/LinkedList/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/LinkedList/MyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/stacksandqueues/MinStack.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/stacksandqueues/NGE.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/stacksandqueues/NextLarger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/stacksandqueues/NonRepeatingChar.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/stacksandqueues/QueueStack.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/stacksandqueues/StackArray.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/stacksandqueues/StackLinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/stacksandqueues/StackMin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/stacksandqueues/tolookAgain/StackUsingQueue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/tree/BinaryTreePaths.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/tree/BinaryTreePaths.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DsPractice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DsPractice.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/3Sum.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/3Sum.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/tree/IncreasingBst.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/tree/IncreasingBst.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/tree/InvertTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/tree/InvertTree.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/tree/IsUnivaluedTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/tree/IsUnivaluedTree.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/tree/LowestCommonAncestor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/tree/LowestCommonAncestor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/tree/MaximumDepth.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/tree/MaximumDepth.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/tree/MergeTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/tree/MergeTree.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/tree/SearchTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/tree/SearchTree.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/tree/SumOfTwo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/tree/SumOfTwo.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/tree/SumRootToLeaf.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/tree/SumRootToLeaf.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/tree/TreeMethods.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/tree/TreeMethods.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/tree/TreeNode.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/tree/TreeNode.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/tree/findMode.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/tree/findMode.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/tree/iterativeTraversal/Inorder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/tree/iterativeTraversal/Inorder.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/tree/iterativeTraversal/LevelOrderBFS.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/tree/iterativeTraversal/LevelOrderBFS.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/tree/iterativeTraversal/PostOrder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/tree/iterativeTraversal/PostOrder.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/tree/iterativeTraversal/Preorder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/tree/iterativeTraversal/Preorder.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/tree/iterativeTraversal/TreeTraversal.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/tree/levelOrdeNArrayTreer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/tree/levelOrdeNArrayTreer.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,9 +70,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Kotlin File" />
         <option value="Kotlin Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -87,6 +89,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -95,6 +101,9 @@
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/company/tree" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="typescript.add.unambiguous.imports.on.the.fly" value="true" />
   </component>
@@ -108,7 +117,7 @@
       <recent name="com.company.stacksandqueues" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ValidMountainArrayKt">
+  <component name="RunManager" selected="Application.RottingOranges">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -116,13 +125,13 @@
       <module />
       <method />
     </configuration>
-    <configuration name="StackLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.stack.StackLinkedList" />
+    <configuration name="RottingOranges" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.RottingOranges" />
       <module name="DsPractice" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.stack.*" />
+          <option name="PATTERN" value="com.company.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -136,17 +145,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -154,53 +152,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StackArray" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+    <configuration name="ConstructMaximumBinaryTreeKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="DsPractice" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.company.stack.StackArray" />
+      <option name="MAIN_CLASS_NAME" value="com.company.tree.ConstructMaximumBinaryTreeKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StackArrayKtKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+    <configuration name="GetAllElementsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="DsPractice" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.company.stack.StackArrayKtKt" />
+      <option name="MAIN_CLASS_NAME" value="com.company.tree.GetAllElementsKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StackLinkedListKtKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+    <configuration name="InsertIntoBSTKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="DsPractice" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.company.stack.StackLinkedListKtKt" />
+      <option name="MAIN_CLASS_NAME" value="com.company.tree.InsertIntoBSTKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ValidMountainArrayKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+    <configuration name="IsBalancedKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="DsPractice" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.company.leetcodeDecember.ValidMountainArrayKt" />
+      <option name="MAIN_CLASS_NAME" value="com.company.tree.IsBalancedKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -226,11 +224,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ValidMountainArrayKt" />
-        <item itemvalue="Application.StackLinkedListKtKt" />
-        <item itemvalue="Application.StackArrayKtKt" />
-        <item itemvalue="Application.StackArray" />
-        <item itemvalue="Application.StackLinkedList" />
+        <item itemvalue="Application.RottingOranges" />
+        <item itemvalue="Application.ConstructMaximumBinaryTreeKt" />
+        <item itemvalue="Application.IsBalancedKt" />
+        <item itemvalue="Application.InsertIntoBSTKt" />
+        <item itemvalue="Application.GetAllElementsKt" />
       </list>
     </recent_temporary>
   </component>
@@ -318,7 +316,26 @@
       <workItem from="1607541906599" duration="103000" />
       <workItem from="1607542030186" duration="921000" />
       <workItem from="1607564688764" duration="3749000" />
-      <workItem from="1607651002859" duration="2621000" />
+      <workItem from="1607651002859" duration="2835000" />
+      <workItem from="1607782605160" duration="11500000" />
+      <workItem from="1607910745855" duration="7355000" />
+      <workItem from="1608260265726" duration="600000" />
+      <workItem from="1608265008120" duration="109000" />
+      <workItem from="1608343442725" duration="1004000" />
+      <workItem from="1608370079839" duration="7412000" />
+      <workItem from="1608428848488" duration="250000" />
+      <workItem from="1608430469635" duration="2638000" />
+      <workItem from="1608479347552" duration="547000" />
+      <workItem from="1608516745749" duration="2261000" />
+      <workItem from="1608692443022" duration="2156000" />
+      <workItem from="1610371478536" duration="142000" />
+      <workItem from="1610371641619" duration="3847000" />
+      <workItem from="1610631858080" duration="43000" />
+      <workItem from="1610773562117" duration="873000" />
+      <workItem from="1610852149717" duration="541000" />
+      <workItem from="1610859291927" duration="3780000" />
+      <workItem from="1610940364678" duration="1499000" />
+      <workItem from="1610979792065" duration="1874000" />
     </task>
     <task id="LOCAL-00001" summary="added new files">
       <created>1599395326607</created>
@@ -390,7 +407,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607132145452</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="tree files">
+      <created>1607659365931</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1607659365931</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -436,7 +460,8 @@
     <MESSAGE value="daily challenge solutions" />
     <MESSAGE value="daily plus medium linkedlist" />
     <MESSAGE value="n-ary tree files added" />
-    <option name="LAST_COMMIT_MESSAGE" value="n-ary tree files added" />
+    <MESSAGE value="tree files" />
+    <option name="LAST_COMMIT_MESSAGE" value="tree files" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -520,24 +545,14 @@
           <option name="timeStamp" value="154" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/tree/SearchTree.kt</url>
-          <line>26</line>
-          <option name="timeStamp" value="159" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/company/tree/SumOfLeftLeaves.kt</url>
-          <line>9</line>
-          <option name="timeStamp" value="161" />
+          <url>file://$PROJECT_DIR$/src/com/company/RottingOranges.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="200" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/company/tree/diameterOfBinaryTree.kt</url>
           <line>20</line>
           <option name="timeStamp" value="162" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/company/tree/levelOrdeNArrayTreer.kt</url>
-          <line>40</line>
-          <option name="timeStamp" value="167" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/company/leetcodeDecember/canPlaceFlowers.kt</url>
@@ -558,6 +573,26 @@
           <url>file://$PROJECT_DIR$/src/com/company/stack/StackArray.java</url>
           <line>9</line>
           <option name="timeStamp" value="177" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/company/tree/iterativeTraversal/PostOrder.kt</url>
+          <line>52</line>
+          <option name="timeStamp" value="180" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/company/tree/deepestLeavesSum.kt</url>
+          <line>5</line>
+          <option name="timeStamp" value="184" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/company/tree/isBalanced.kt</url>
+          <line>25</line>
+          <option name="timeStamp" value="193" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/company/tree/isBalanced.kt</url>
+          <line>21</line>
+          <option name="timeStamp" value="194" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

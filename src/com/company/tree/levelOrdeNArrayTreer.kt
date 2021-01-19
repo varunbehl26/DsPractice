@@ -6,8 +6,8 @@ import java.util.*
 
 
 fun levelOrderNArry(root: N_Array_Node?): List<List<Int?>> {
-    val parentMutableList = mutableListOf<List<Int>>()
-    root ?: return parentMutableList
+    val list = mutableListOf<List<Int>>()
+    root ?: return list
     val queue = ArrayDeque<N_Array_Node>()
     queue.offer(root)
 
@@ -23,10 +23,10 @@ fun levelOrderNArry(root: N_Array_Node?): List<List<Int?>> {
                 }
             }
         }
-        parentMutableList.add(sublist)
+        list.add(sublist)
     }
 
-    return parentMutableList.toList()
+    return list
 }
 
 fun postorderNArry(root: N_Array_Node?): List<Int> {

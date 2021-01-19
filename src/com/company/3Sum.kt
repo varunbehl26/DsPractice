@@ -1,21 +1,32 @@
 package com.company
 
+import org.junit.Test
 import java.util.*
+import kotlin.test.assertEquals
 
 
-fun main() {
-    val list = threeSum(intArrayOf(-1, 0, 1, 2, -1, -4))
-    list?.forEach {
-        it.forEach {
-            print(it)
-            print(" ")
-        }
-        println()
+class Tests {
+    @Test
+    fun testExample1() {
+        assertEquals(threeSum(listOf(-1, 0, 1, 2, -1, -4)), listOf(listOf(-1, 0, 2), listOf(-1, 0, 1)))
     }
+
+    @Test
+    fun largeInputPerformanceTest() {
+        val ints = List(size = 100) {
+            (-105..106).random()
+        }
+//        assertTimeoutPreemptively(Duration.ofMillis(1000)) {
+//            val size = threeSum(ints)?.size
+//            assertEquals(size, 289)
+//        }
+    }
+
 }
 
-fun threeSum(nums: IntArray): List<List<Int>>? {
-    nums.sort()
+
+fun threeSum(nums: List<Int>): List<List<Int>>? {
+    val nums = nums.sorted()
     val res: MutableList<List<Int>> = LinkedList()
     for (i in 0..nums.size - 2) {
         if (i == 0 || i > 0 && nums[i] != nums[i - 1]) {

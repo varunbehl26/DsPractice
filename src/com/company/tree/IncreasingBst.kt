@@ -16,7 +16,7 @@ fun increasingBSTHelper(root: TreeNode?, tail: TreeNode?): TreeNode? {
 
 fun main(args: Array<String>) {
     val arr = arrayOf(5, 3, 6, 2, 4, null, 8, 1, null, null, null, 7, 9)
-    val node = constructBinarySearchTreeInOrder(arr)
+    val node = constructBinarySearchTree(arr)
     val bst = increasingBST(node)
     println(bst)
 

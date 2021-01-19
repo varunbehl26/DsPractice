@@ -1,5 +1,6 @@
 package com.company.tree
 
+import com.company.tree.iterativeTraversal.inorderRecursive
 import java.util.*
 
 
@@ -19,25 +20,18 @@ fun findTargetHelper(root: TreeNode?, target: Int, hashSet: HashSet<Int>): Boole
 //Inorder traversal makes the tree sorted and then values can be searched
 fun findTargetInorderVersion(root: TreeNode?, k: Int): Boolean {
     val nums: MutableList<Int> = ArrayList()
-    inorder(root, nums)
-    var i = 0
-    var j = nums.size - 1
-    while (i < j) {
-        if (nums[i] + nums[j] == k) return true
-        if (nums[i] + nums[j] < k) i++ else j--
+    inorderRecursive(root, nums)
+    var start = 0
+    var end = nums.size - 1
+    while (start < end) {
+        if (nums[start] + nums[end] == k) return true
+        if (nums[start] + nums[end] < k) start++ else end--
     }
     return false
 }
 
-fun inorder(root: TreeNode?, nums: MutableList<Int>) {
-    if (root == null) return
-    inorder(root.left, nums)
-    nums.add(root.`val`)
-    inorder(root.right, nums)
-}
-
 fun main() {
     val array = arrayOf(5, 3, 6, 2, 4, null, 7)
-    val root = constructBinarySearchTreeInOrder(array)
+    val root = constructBinarySearchTree(array)
     println(findTarget(root, 9))
 }

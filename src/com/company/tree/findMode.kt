@@ -27,7 +27,7 @@ fun traverseInOrder(root: TreeNode?, map: MutableMap<Int, Int>) {
 
 
 fun main() {
-    val node = constructBinarySearchTreeInOrder(arrayOf(1, 2, null, 3))
+    val node = constructBinarySearchTree(arrayOf(1, 2, null, 3))
     val array = findMode(node)
     array.forEach { println(it) }
 }

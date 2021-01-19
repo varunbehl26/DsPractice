@@ -1,10 +1,10 @@
 package com.company.tree
 
 import java.util.*
-import kotlin.collections.ArrayList
 
 typealias Visitor<Int> = (Int) -> Unit
 
+//left -> root -> right
 fun traverseInOrder(root: TreeNode?, visit: Visitor<Int>) {
     if (root == null) {
         return
@@ -14,15 +14,24 @@ fun traverseInOrder(root: TreeNode?, visit: Visitor<Int>) {
     traverseInOrder(root.right, visit)
 }
 
-fun constructBinarySearchTreeInOrder(arr: Array<Int?>): TreeNode {
+//root->left->right
+fun traversePreOrder(root: TreeNode?, visit: Visitor<Int>) {
+    if (root == null) {
+        return
+    }
+    visit(root.`val`)
+    traversePreOrder(root.left, visit)
+    traversePreOrder(root.right, visit)
+}
+
+fun constructBinarySearchTree(arr: Array<Int?>): TreeNode? {
     var node = arr[0]?.let { TreeNode(it) }
     for (i in 1 until arr.size)
         if (arr[i] != null) {
             node = insertBst(node, arr[i]!!)
         }
-    return node!!
+    return node
 }
-
 
 private fun insertBst(node: TreeNode?, value: Int): TreeNode {
     node ?: return TreeNode(value)
@@ -41,11 +50,10 @@ fun constructBTreeLevel(array: Array<Int?>?): TreeNode? {
 
     val integerQueue: Queue<Int?> = LinkedList()
 
-    val root = TreeNode(array[0]!!)
-
-    for (i in 1 until array.size) {
-        integerQueue.offer(array[i])
+    for (element in array) {
+        integerQueue.offer(element)
     }
+    val root = TreeNode(integerQueue.poll()!!)
 
     treeNodeQueue.offer(root)
 
@@ -69,27 +77,6 @@ fun constructBTreeLevel(array: Array<Int?>?): TreeNode? {
     return root
 }
 
-fun levelOrder(root: TreeNode?): MutableList<Int> {
-    val list = ArrayList<Int>()
-    if (root == null) {
-        return list
-    }
-    val queue: Queue<TreeNode> = LinkedList()
-    queue.offer(root)
-    while (queue.isNotEmpty()) {
-        val subList = ArrayList<Int>()
-        for (i in 0 until queue.size) {
-            val peekNode = queue.peek()
-            if (peekNode != null) {
-                if (peekNode.right != null) queue.offer(peekNode?.right)
-                if (peekNode.left != null) queue.offer(peekNode.left)
-            }
-            subList.add(queue.poll().`val`)
-        }
-        list.addAll(subList)
-    }
-    return list
-}
 
 fun printLevelOrder(root: TreeNode?) {
     val queue: Queue<TreeNode> = ArrayDeque()
