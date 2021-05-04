@@ -1,10 +1,18 @@
-package com.company.dailyChallenge;
+package com.company.arrays.medium;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class KdiffPairs {
 
+    /*
+        https://leetcode.com/problems/k-diff-pairs-in-an-array/
+
+        Pairs need to be found, whose difference is given
+        Best way is to keep all numbers in hashmap & then start finding the key + K,
+        if it exists we have found the pair
+
+     */
     public static int findPairs(int[] nums, int k) {
         if (nums.length != 0) {
             Map<Integer, Integer> map = new HashMap<>();
@@ -32,7 +40,7 @@ public class KdiffPairs {
 
     public static void main(String[] args) {
 
-        int[] nums = {1, 3, 1, 5, 4, 5, 5};
-        System.out.println(findPairs(nums, 0));
+        int[] nums = {3, 1, 4, 1, 5};
+        System.out.println(findPairs(nums, 2));
     }
 }

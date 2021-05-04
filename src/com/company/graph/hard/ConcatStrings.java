@@ -1,7 +1,10 @@
-package com.company.amcat;
+package com.company.graph.hard;
 
 import java.util.*;
 
+
+//DFS
+//Dynamic Programming
 public class ConcatStrings {
 
     public static void main(String[] args) {
@@ -13,28 +16,33 @@ public class ConcatStrings {
     }
 
     public static List<String> findAllConcatenatedWordsInADict(String[] words) {
-        List<String> ans = new ArrayList<>();
+        List<String> resultList = new ArrayList<>();
+
         HashSet<String> wordSet = new HashSet<>(Arrays.asList(words));
-        HashMap<String, Boolean> cache = new HashMap<>();
+        HashMap<String, Boolean> booleanHashMap = new HashMap<>();
         for (String word : words)
-            if (dfs(word, wordSet, cache)) {
-                ans.add(word);
+            if (dfs(word, wordSet, booleanHashMap)) {
+                resultList.add(word);
             }
-        return ans;
+
+        return resultList;
     }
 
-    static boolean dfs(String word, HashSet<String> wordSet, HashMap<String, Boolean> cache) {
-        if (cache.containsKey(word)) return cache.get(word);
+    static boolean dfs(String word, HashSet<String> wordSet, HashMap<String, Boolean> cacheMap) {
+        if (cacheMap.containsKey(word)) {
+            return cacheMap.get(word);
+        }
         for (int i = 1; i < word.length(); i++) {
-            if (wordSet.contains(word.substring(0, i))) {
+            String substring = word.substring(0, i);
+            if (wordSet.contains(substring)) {
                 String suffix = word.substring(i);
-                if (wordSet.contains(suffix) || dfs(suffix, wordSet, cache)) {
-                    cache.put(word, true);
+                if (wordSet.contains(suffix) || dfs(suffix, wordSet, cacheMap)) {
+                    cacheMap.put(word, true);
                     return true;
                 }
             }
         }
-        cache.put(word, false);
+        cacheMap.put(word, false);
         return false;
     }
 }

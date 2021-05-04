@@ -1,4 +1,4 @@
-package com.company.amcat;
+package com.company.graph.hard;
 
 import java.util.ArrayList;
 import java.util.Arrays;

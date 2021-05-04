@@ -1,4 +1,4 @@
-package com.company.amcat;
+package com.company.amazonInterview;
 
 import java.util.*;
 
