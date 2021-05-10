@@ -2,25 +2,30 @@ package com.company.arrays.easy;
 
 public class NonDecreasingArray {
 
+    /*
+        https://www.youtube.com/watch?v=Dxv_kCAYOk4
+        // If the next element is smaller than the first on
+     */
+    public static boolean checkPossibility(int[] arr) {
+        int count = 0;
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] < arr[i - 1]) {
+                //Case where the first element is bigger
 
-    public static boolean checkPossibility(int[] nums) {
-        boolean foundIncreasingOnce = true;
-        for (int i = 0; i < nums.length - 1; i++) {
-            if (nums[i] <= nums[i + 1]) {
-
-            } else {
-                if (foundIncreasingOnce) {
-                    foundIncreasingOnce = false;
+                if (i == 1 || arr[i - 2] <= arr[i]) {
+                    arr[i - 1] = arr[i];
                 } else {
-                    return false;
+                    arr[i] = arr[i - 1];
                 }
+                count++;
             }
         }
-        return true;
+        return count <= 1;
     }
 
     public static void main(String[] args) {
-        System.out.println(checkPossibility(new int[]{3, 4, 2, 3}));
+        int[] nums = {4, 2, 3};
+        System.out.println(checkPossibility(nums));
     }
 
 }

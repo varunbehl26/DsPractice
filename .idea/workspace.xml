@@ -29,62 +29,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2be01b86-8397-427c-99a2-fe9d502f70f1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/SearchRange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/arrays/easy/AddOneToClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/arrays/easy/FinalPrices.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/arrays/easy/FindMaxConsecutiveOnes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/arrays/easy/IsPowerOfThree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/arrays/easy/NonDecreasingArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/arrays/easy/NumberEvenDigit.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/arrays/easy/RunningSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/arrays/easy/SumOfUnique.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/arrays/medium/FindDuplicate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/arrays/medium/PowerfulIntegers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/graph/AdjacencyList.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/graph/AdjacencyMatrix.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/graph/Edge.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/graph/Graph.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/graph/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/graph/Ref.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/graph/Vertex.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/graph/breadthfirstsearch/EmployeeImportance.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/graph/breadthfirstsearch/maxLevelSum.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/graph/breadthfirstsearch/minDepth.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/leetcode/liked/addTwoNumbers.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/numPairsDivisibleBy60.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/tree/AVLNode.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/tree/AVLTree.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/tree/AllPossibleBST.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/tree/FindElements.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/LetterCombinations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/arrays/DeleteOperationStrings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/arrays/easy/ConstructTargetArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/arrays/easy/MaxSubArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/heap/Collection.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/heap/ComparableHeap.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/heap/Heap.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/priorityQueue/Queue.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib2.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DsPractice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DsPractice.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/3Sum.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/3Sum.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/amcat/ConcatStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/graph/hard/ConcatStrings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/amcat/MinCostConnectRope.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/amcat/NumIslands.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/amcat/OptimalSol.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/amcat/SuggestedProductskt.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/amazonInterview/SuggestedProductskt.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/amcat/TestCriticalRo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/graph/hard/TestCriticalRo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/amcat/TestSol.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/amcat/TopNComp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/amazonInterview/TopNComp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/amcat/Zombie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/amazonInterview/Zombie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/arrays/AddOneToClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/arrays/ConsecutiveOne.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/arrays/NobleInteger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/arrays/NumberEvenDigit.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/arrays/SingleNumber.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/arrays/easy/SingleNumber.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/arrays/SquaresOFSortedArray.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/arrays/easy/SquaresOFSortedArray.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/arrays/maxPrice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/dailyChallenge/KdiffPairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/arrays/medium/KdiffPairs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/dailyChallenge/RecentCounter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/easy/linkedlist/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/easy/linkedlist/ListNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/graph/BFS.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/graph/DFS.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/graph/Graph.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/graph/GraphKotlin.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/tree/bstFromPreorder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/tree/bstFromPreorder.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/arrays/easy/NonDecreasingArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/arrays/easy/NonDecreasingArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/dailyChallenge/medium/CombinationSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/dailyChallenge/medium/CombinationSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/gfg/arrays/LongestCommonPrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/gfg/arrays/LongestCommonPrefix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/gfg/arrays/MaxSubArray.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/gfg/arrays/isPalindrome.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/gfg/arrays/isPalindrome.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/gfg/must/easy/NonDecreasing.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,6 +59,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin File" />
+        <option value="Kotlin Interface" />
         <option value="Kotlin Class" />
         <option value="Class" />
       </list>
@@ -136,7 +98,7 @@
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/company/graph" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.customizations" />
@@ -157,7 +119,7 @@
       <recent name="com.company.stacksandqueues" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NonDecreasingArray">
+  <component name="RunManager" selected="Application.ConstructTargetArray">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -165,13 +127,41 @@
       <module />
       <method />
     </configuration>
-    <configuration name="KdiffPairs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.arrays.medium.KdiffPairs" />
+    <configuration name="ConstructTargetArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.arrays.easy.ConstructTargetArray" />
       <module name="DsPractice" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.arrays.medium.*" />
+          <option name="PATTERN" value="com.company.arrays.easy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeleteOperationStrings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.arrays.DeleteOperationStrings" />
+      <module name="DsPractice" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.arrays.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaxReward" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Info.MaxReward" />
+      <module name="DsPractice" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.Info.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -193,13 +183,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PascalTriangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.arrays.PascalTriangle" />
+    <configuration name="RatingMaping" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Info.RatingMaping" />
       <module name="DsPractice" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.arrays.*" />
+          <option name="PATTERN" value="com.company.Info.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -213,35 +203,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SingleNumberKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <module name="DsPractice" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.company.arrays.SingleNumberKt" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SquaresOFSortedArrayKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <module name="DsPractice" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.company.arrays.SquaresOFSortedArrayKt" />
-      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -266,11 +241,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ConstructTargetArray" />
+        <item itemvalue="Application.DeleteOperationStrings" />
+        <item itemvalue="Application.MaxReward" />
+        <item itemvalue="Application.RatingMaping" />
         <item itemvalue="Application.NonDecreasingArray" />
-        <item itemvalue="Application.KdiffPairs" />
-        <item itemvalue="Application.PascalTriangle" />
-        <item itemvalue="Application.SquaresOFSortedArrayKt" />
-        <item itemvalue="Application.SingleNumberKt" />
       </list>
     </recent_temporary>
   </component>
@@ -412,6 +387,17 @@
       <workItem from="1620107930230" duration="3461000" />
       <workItem from="1620111507290" duration="4120000" />
       <workItem from="1620122007268" duration="272000" />
+      <workItem from="1620129678564" duration="114000" />
+      <workItem from="1620183575469" duration="12518000" />
+      <workItem from="1620266460629" duration="4580000" />
+      <workItem from="1620310304290" duration="724000" />
+      <workItem from="1620312654315" duration="32000" />
+      <workItem from="1620312717242" duration="695000" />
+      <workItem from="1620355009838" duration="7440000" />
+      <workItem from="1620449125593" duration="12000" />
+      <workItem from="1620449164955" duration="4184000" />
+      <workItem from="1620542124729" duration="311000" />
+      <workItem from="1620615020913" duration="3238000" />
     </task>
     <task id="LOCAL-00001" summary="added new files">
       <created>1599395326607</created>
@@ -497,7 +483,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611022134985</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="New questions added">
+      <created>1620129780391</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1620129780391</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -545,7 +538,8 @@
     <MESSAGE value="n-ary tree files added" />
     <MESSAGE value="tree files" />
     <MESSAGE value="tree questions added" />
-    <option name="LAST_COMMIT_MESSAGE" value="tree questions added" />
+    <MESSAGE value="New questions added" />
+    <option name="LAST_COMMIT_MESSAGE" value="New questions added" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -580,7 +574,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/dailyChallenge/medium/CombinationSum.java</url>
-          <line>43</line>
+          <line>16</line>
           <option name="timeStamp" value="87" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -665,7 +659,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/arrays/medium/PowerfulIntegers.java</url>
-          <line>29</line>
+          <line>31</line>
           <option name="timeStamp" value="218" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -689,9 +683,24 @@
           <option name="timeStamp" value="227" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/arrays/easy/MaxSubArray.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="229" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/arrays/easy/NonDecreasingArray.java</url>
           <line>8</line>
-          <option name="timeStamp" value="228" />
+          <option name="timeStamp" value="230" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/arrays/easy/NonDecreasingArray.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="232" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/arrays/easy/ConstructTargetArray.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="246" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/company/gfg/RottingOranges.kt</url>
@@ -717,9 +726,9 @@
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/DsPractice$FindModeKt.ic" NAME="FindModeKt Coverage Results" MODIFIED="1606793115036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/DsPractice$RemoveCoveredIntervals.ic" NAME="RemoveCoveredIntervals Coverage Results" MODIFIED="1601798631056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.company.dailyChallenge.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/DsPractice$FindModeKt.ic" NAME="FindModeKt Coverage Results" MODIFIED="1606793115036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

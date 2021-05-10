@@ -14,13 +14,13 @@ public class LongestCommonPrefix {
     }
 
     //https://leetcode.com/media/original_images/14_basic.png
-    public static String longestCommonPrefix(ArrayList<String> strs) {
-        if (strs.size() == 0) {
+    public static String longestCommonPrefix(ArrayList<String> stringArrayList) {
+        if (stringArrayList.size() == 0) {
             return "";
         }
-        String prefix = strs.get(0);
-        for (int i = 1; i < strs.size(); i++)
-            while (strs.get(i).indexOf(prefix) != 0) {
+        String prefix = stringArrayList.get(0);
+        for (int i = 1; i < stringArrayList.size(); i++)
+            while (stringArrayList.get(i).indexOf(prefix) != 0) {
                 prefix = prefix.substring(0, prefix.length() - 1);
                 System.out.println(prefix + " i " + i);
                 if (prefix.isEmpty()) {
