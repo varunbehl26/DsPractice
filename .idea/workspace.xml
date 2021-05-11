@@ -29,23 +29,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2be01b86-8397-427c-99a2-fe9d502f70f1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/LetterCombinations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/arrays/DeleteOperationStrings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/arrays/easy/ConstructTargetArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/arrays/easy/MaxSubArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/heap/Collection.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/heap/ComparableHeap.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/heap/Heap.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/priorityQueue/Queue.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib2.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/CountPrimes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/heap/easy/LastStoneWeight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/heap/easy/MaxUnitsInTruck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/heap/medium/SeatManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/heap/medium/SortCharactersByFrequency.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DsPractice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DsPractice.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/arrays/easy/NonDecreasingArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/arrays/easy/NonDecreasingArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/dailyChallenge/medium/CombinationSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/dailyChallenge/medium/CombinationSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/gfg/arrays/LongestCommonPrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/gfg/arrays/LongestCommonPrefix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/gfg/arrays/MaxSubArray.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/gfg/arrays/isPalindrome.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/gfg/arrays/isPalindrome.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/gfg/must/easy/NonDecreasing.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +108,7 @@
       <recent name="com.company.stacksandqueues" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ConstructTargetArray">
+  <component name="RunManager" selected="Application.SortCharactersByFrequency">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -127,13 +116,13 @@
       <module />
       <method />
     </configuration>
-    <configuration name="ConstructTargetArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.arrays.easy.ConstructTargetArray" />
+    <configuration name="CountPrimes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.CountPrimes" />
       <module name="DsPractice" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.arrays.easy.*" />
+          <option name="PATTERN" value="com.company.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -141,13 +130,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DeleteOperationStrings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.arrays.DeleteOperationStrings" />
+    <configuration name="LastStoneWeight" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.heap.easy.LastStoneWeight" />
       <module name="DsPractice" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.arrays.*" />
+          <option name="PATTERN" value="com.company.heap.easy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -155,13 +144,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaxReward" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Info.MaxReward" />
+    <configuration name="MaxUnitsInTruck" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.heap.easy.MaxUnitsInTruck" />
       <module name="DsPractice" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.Info.*" />
+          <option name="PATTERN" value="com.company.heap.easy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -169,13 +158,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NonDecreasingArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.arrays.easy.NonDecreasingArray" />
+    <configuration name="SeatManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.heap.medium.SeatManager" />
       <module name="DsPractice" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.arrays.easy.*" />
+          <option name="PATTERN" value="com.company.heap.medium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -183,13 +172,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RatingMaping" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Info.RatingMaping" />
+    <configuration name="SortCharactersByFrequency" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.heap.medium.SortCharactersByFrequency" />
       <module name="DsPractice" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.Info.*" />
+          <option name="PATTERN" value="com.company.heap.medium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -241,11 +230,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ConstructTargetArray" />
-        <item itemvalue="Application.DeleteOperationStrings" />
-        <item itemvalue="Application.MaxReward" />
-        <item itemvalue="Application.RatingMaping" />
-        <item itemvalue="Application.NonDecreasingArray" />
+        <item itemvalue="Application.SortCharactersByFrequency" />
+        <item itemvalue="Application.SeatManager" />
+        <item itemvalue="Application.MaxUnitsInTruck" />
+        <item itemvalue="Application.CountPrimes" />
+        <item itemvalue="Application.LastStoneWeight" />
       </list>
     </recent_temporary>
   </component>
@@ -397,7 +386,9 @@
       <workItem from="1620449125593" duration="12000" />
       <workItem from="1620449164955" duration="4184000" />
       <workItem from="1620542124729" duration="311000" />
-      <workItem from="1620615020913" duration="3238000" />
+      <workItem from="1620615020913" duration="8483000" />
+      <workItem from="1620690060917" duration="282000" />
+      <workItem from="1620699433788" duration="8740000" />
     </task>
     <task id="LOCAL-00001" summary="added new files">
       <created>1599395326607</created>
@@ -490,7 +481,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620129780391</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="New questions added">
+      <created>1620633437926</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1620633437926</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -699,7 +697,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/arrays/easy/ConstructTargetArray.java</url>
-          <line>15</line>
+          <line>22</line>
           <option name="timeStamp" value="246" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
