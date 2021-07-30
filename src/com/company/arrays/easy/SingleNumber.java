@@ -1,4 +1,4 @@
-package com.company.easy.arrays;
+package com.company.arrays.easy;
 
 
 //https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/549/

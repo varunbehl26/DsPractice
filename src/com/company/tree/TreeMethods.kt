@@ -2,6 +2,7 @@ package com.company.tree
 
 import java.util.*
 
+
 typealias Visitor<Int> = (Int) -> Unit
 
 //left -> root -> right
@@ -25,7 +26,7 @@ fun traversePreOrder(root: TreeNode?, visit: Visitor<Int>) {
 }
 
 fun constructBinarySearchTree(arr: Array<Int?>): TreeNode? {
-    var node = arr[0]?.let { TreeNode(it) }
+    var node = arr.get(0)?.let { TreeNode(it) }
     for (i in 1 until arr.size)
         if (arr[i] != null) {
             node = insertBst(node, arr[i]!!)

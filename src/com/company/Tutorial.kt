@@ -485,7 +485,7 @@ fun main(args: Array<String>) {
 
     // We could use the force operator !! to force
     // a null assignment
-    var nullVal3 = nullVal2!!.length
+//    var nullVal3 = nullVal2!!.length
 
     // The Elvis operator assigns a default value
     // if null

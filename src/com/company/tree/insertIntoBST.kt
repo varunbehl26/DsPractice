@@ -34,4 +34,5 @@ fun main() {
     val root = constructBinarySearchTree(arrayOf(4, 2, 7, 1, 3))
     val tree = insertIntoBST(root, 5)
     traverseInOrder(tree) { println(it) }
+
 }

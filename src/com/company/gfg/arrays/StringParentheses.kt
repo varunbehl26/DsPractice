@@ -1,7 +1,5 @@
 package com.company.gfg.arrays
 
-import java.util.*
-
 
 //https://leetcode.com/problems/valid-parentheses/
 
@@ -15,27 +13,5 @@ import java.util.*
 
 fun main() {
 
-    print(isValid("]"))
 
-}
-
-fun isValid(s: String): Boolean {
-    val stack = Stack<Char>()
-    val charArray = s.toCharArray()
-
-    charArray.forEach {
-        if (it == '(' || it == '{' || it == '[') {
-            stack.push(it)
-        } else if (it == ')' && stack.isNotEmpty() && stack.peek() == '(') {
-            stack.pop()
-        } else if (it == '}' && stack.isNotEmpty() && stack.peek() == '{') {
-            stack.pop()
-        } else if (it == ']' && stack.isNotEmpty() && stack.peek() == '[') {
-            stack.pop()
-        } else {
-            return false
-        }
-
-    }
-    return stack.isEmpty()
 }

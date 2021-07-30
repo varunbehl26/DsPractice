@@ -1,5 +1,14 @@
-package com.company.tree
+package com.company.tree.easy
 
+import com.company.tree.TreeNode
+import com.company.tree.printLevelOrder
+
+
+/*
+    The logic is simple
+    Use one tree and keep adding the second one using recursion
+
+ */
 fun mergeTrees(t1: TreeNode?, t2: TreeNode?): TreeNode? {
     when {
         t1 == null -> {
@@ -28,6 +37,6 @@ fun main(args: Array<String>) {
     root1.left?.right = TreeNode(4)
     root1.right?.right = TreeNode(7)
     val merged = mergeTrees(root, root1)
-    println(merged.toString())
+    printLevelOrder(merged)
 
 }
